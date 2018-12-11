@@ -5,3 +5,5 @@ xcschememanagement.plist
 *.xcbkptlist
 
 .DS_Store
+
+Keys.swift
