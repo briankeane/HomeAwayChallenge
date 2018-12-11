@@ -13,6 +13,6 @@ import Foundation
 //
 
 //class SeatGeekKeys {
-//    var clientID = "YOUR_SEATGEEK_CLIENT_ID"
-//    var clientSecret = "YOUR_SEATGEEK_CLIENT_SECRET"
+//    public static var clientID = "YOUR_SEATGEEK_CLIENT_ID"
+//    public static var clientSecret = "YOUR_SEATGEEK_CLIENT_SECRET"
 //}
