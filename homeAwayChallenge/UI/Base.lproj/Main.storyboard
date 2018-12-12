@@ -39,6 +39,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="A9k-bD-1ci"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" red="0.070588235289999995" green="0.19215686269999999" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -63,6 +64,8 @@
                     <navigationItem key="navigationItem" id="c47-9t-JaL"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="searchBar" destination="HPA-ch-IRG" id="f7j-FP-taG"/>
+                        <outlet property="searchResultsTableView" destination="app-vn-xs9" id="5DZ-HK-0fx"/>
                         <segue destination="gnP-Ku-hpr" kind="show" id="Sie-iD-vgH"/>
                     </connections>
                 </viewController>

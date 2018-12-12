@@ -13,6 +13,8 @@
 		4B3780A321BF360E0030F76D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3780A221BF360E0030F76D /* Assets.xcassets */; };
 		4B3780A621BF360E0030F76D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3780A421BF360E0030F76D /* LaunchScreen.storyboard */; };
 		4B3780B121BF360F0030F76D /* homeAwayChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3780B021BF360F0030F76D /* homeAwayChallengeTests.swift */; };
+		4B9148DA21C17EBD00337FB4 /* searchEventsSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B9148D921C17EBD00337FB4 /* searchEventsSuccess.json */; };
+		4B9148DC21C1918700337FB4 /* 404.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B9148DB21C1918700337FB4 /* 404.json */; };
 		4BA9779E21C00532002DF5D2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA9779D21C00532002DF5D2 /* DetailViewController.swift */; };
 		4BA977A421C00634002DF5D2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977A321C00634002DF5D2 /* API.swift */; };
 		4BA977AB21C0087F002DF5D2 /* FavoriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977AA21C0087F002DF5D2 /* FavoriterTests.swift */; };
@@ -20,6 +22,8 @@
 		4BA977AE21C00907002DF5D2 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977A521C00828002DF5D2 /* APITests.swift */; };
 		4BA977B121C014F5002DF5D2 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977B021C014F5002DF5D2 /* Keys.swift */; };
 		4BA977B621C0165B002DF5D2 /* Keys-Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977B221C01508002DF5D2 /* Keys-Example.swift */; };
+		4BA977BA21C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977B921C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift */; };
+		4BA977BC21C0774F002DF5D2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977BB21C0774F002DF5D2 /* Event.swift */; };
 		D7DF9B7091297B3066D85695 /* Pods_homeAwayChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941A22643F46FDEF568F1A23 /* Pods_homeAwayChallengeTests.framework */; };
 		DEC992151DB9EABE0D6024D6 /* Pods_homeAwayChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685D3B583DB023C994AE1279 /* Pods_homeAwayChallenge.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +50,8 @@
 		4B3780AC21BF360F0030F76D /* homeAwayChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = homeAwayChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3780B021BF360F0030F76D /* homeAwayChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeAwayChallengeTests.swift; sourceTree = "<group>"; };
 		4B3780B221BF360F0030F76D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9148D921C17EBD00337FB4 /* searchEventsSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchEventsSuccess.json; sourceTree = "<group>"; };
+		4B9148DB21C1918700337FB4 /* 404.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 404.json; sourceTree = "<group>"; };
 		4BA9779D21C00532002DF5D2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4BA977A321C00634002DF5D2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		4BA977A521C00828002DF5D2 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
@@ -53,6 +59,8 @@
 		4BA977AC21C0088D002DF5D2 /* Favoriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favoriter.swift; sourceTree = "<group>"; };
 		4BA977B021C014F5002DF5D2 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		4BA977B221C01508002DF5D2 /* Keys-Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keys-Example.swift"; sourceTree = "<group>"; };
+		4BA977B921C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+TextViewExtensions.swift"; sourceTree = "<group>"; };
+		4BA977BB21C0774F002DF5D2 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		685D3B583DB023C994AE1279 /* Pods_homeAwayChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homeAwayChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941A22643F46FDEF568F1A23 /* Pods_homeAwayChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homeAwayChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62613FFB7DED484294E9630 /* Pods-homeAwayChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeAwayChallenge.release.xcconfig"; path = "Target Support Files/Pods-homeAwayChallenge/Pods-homeAwayChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,9 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				4B3780A721BF360E0030F76D /* Info.plist */,
-				4BA977A221C0060B002DF5D2 /* Utilities */,
 				4BA9779F21C00554002DF5D2 /* Config */,
+				4BA977BD21C07754002DF5D2 /* Models */,
 				4BA977A021C00575002DF5D2 /* UI */,
+				4BA977A221C0060B002DF5D2 /* Utilities */,
 				4BA977A121C0058E002DF5D2 /* ViewControllers */,
 			);
 			path = homeAwayChallenge;
@@ -115,10 +124,20 @@
 		4B3780AF21BF360F0030F76D /* homeAwayChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				4B9148D421C17D9F00337FB4 /* SampleResponses */,
 				4B3780B021BF360F0030F76D /* homeAwayChallengeTests.swift */,
 				4B3780B221BF360F0030F76D /* Info.plist */,
 			);
 			path = homeAwayChallengeTests;
+			sourceTree = "<group>";
+		};
+		4B9148D421C17D9F00337FB4 /* SampleResponses */ = {
+			isa = PBXGroup;
+			children = (
+				4B9148D921C17EBD00337FB4 /* searchEventsSuccess.json */,
+				4B9148DB21C1918700337FB4 /* 404.json */,
+			);
+			path = SampleResponses;
 			sourceTree = "<group>";
 		};
 		4BA9779F21C00554002DF5D2 /* Config */ = {
@@ -137,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				4B37809F21BF360B0030F76D /* Main.storyboard */,
+				4BA977B921C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -175,6 +195,14 @@
 				4BA977AA21C0087F002DF5D2 /* FavoriterTests.swift */,
 			);
 			path = Favoriter;
+			sourceTree = "<group>";
+		};
+		4BA977BD21C07754002DF5D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BA977BB21C0774F002DF5D2 /* Event.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A1538282E83DC8A4BE82F996 /* Pods */ = {
@@ -292,6 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9148DC21C1918700337FB4 /* 404.json in Resources */,
+				4B9148DA21C17EBD00337FB4 /* searchEventsSuccess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,12 +338,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-homeAwayChallenge/Pods-homeAwayChallenge-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -352,6 +386,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-homeAwayChallengeTests/Pods-homeAwayChallengeTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -359,6 +394,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,8 +432,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BA977AD21C0088D002DF5D2 /* Favoriter.swift in Sources */,
+				4BA977BC21C0774F002DF5D2 /* Event.swift in Sources */,
 				4BA977B121C014F5002DF5D2 /* Keys.swift in Sources */,
 				4BA9779E21C00532002DF5D2 /* DetailViewController.swift in Sources */,
+				4BA977BA21C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift in Sources */,
 				4B37809E21BF360B0030F76D /* SearchViewController.swift in Sources */,
 				4BA977A421C00634002DF5D2 /* API.swift in Sources */,
 				4BA977B621C0165B002DF5D2 /* Keys-Example.swift in Sources */,

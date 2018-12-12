@@ -1,0 +1,2600 @@
+{
+    "meta": {
+        "geolocation": null,
+        "per_page": 10,
+        "total": 59,
+        "took": 3,
+        "page": 1
+    },
+    "in_hand": {},
+    "events": [
+        {
+            "links": [],
+            "event_promotion": null,
+            "is_open": false,
+            "id": 4484664,
+            "stats": {
+                "visible_listing_count": 355,
+                "dq_bucket_counts": [
+                    2,
+                    197,
+                    323,
+                    151,
+                    151,
+                    97,
+                    25,
+                    0
+                ],
+                "average_price": 148,
+                "lowest_price_good_deals": 29,
+                "median_price": 116,
+                "listing_count": 952,
+                "lowest_price": 29,
+                "highest_price": 854
+            },
+            "title": "Boston Celtics at Washington Wizards",
+            "announce_date": "2018-08-10T00:00:00",
+            "score": 0.715,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-20T00:00:00Z",
+                "method": "QRCODE_TM"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "basketball",
+                    "parent_id": 1000000,
+                    "id": 1030000
+                },
+                {
+                    "name": "nba",
+                    "parent_id": 1030000,
+                    "id": 1030100
+                }
+            ],
+            "type": "nba",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2018-12-12T19:00:00",
+            "visible_until_utc": "2018-12-13T04:00:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#008348",
+                            "#BB9753",
+                            "#A73832",
+                            "#FAB383",
+                            "#061922"
+                        ],
+                        "iconic": "#008348",
+                        "primary": [
+                            "#008348",
+                            "#BB9753"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2088,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "http://creativecommons.org/licenses/by-sa/3.0",
+                    "score": 0.75,
+                    "location": {
+                        "lat": 42.3653,
+                        "lon": -71.0618
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Celtics",
+                    "home_venue_id": 1544,
+                    "slug": "boston-celtics",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Atlantic",
+                            "short_name": "Atlantic",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-atlantic"
+                        }
+                    ],
+                    "name": "Boston Celtics",
+                    "url": "https://seatgeek.com/boston-celtics-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/Category:2013%E2%80%9314_Boston_Celtics_season#/media/File:NBA_-_February_2014_-_Celtics_vs_Spurs_-_TD_Garden_-_2.JPG"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/washington-wizards-acfbeb/2102/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#002B5C",
+                            "#E31837",
+                            "#C4CED4"
+                        ],
+                        "iconic": "#002B5C",
+                        "primary": [
+                            "#002B5C",
+                            "#E31837"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/washington-wizards-acfbeb/2102/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2102,
+                    "stats": {
+                        "event_count": 54
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.71,
+                    "location": {
+                        "lat": 38.8981,
+                        "lon": -77.0209
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 54,
+                    "short_name": "Wizards",
+                    "home_venue_id": 181,
+                    "slug": "washington-wizards",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Southeast",
+                            "short_name": "Southeast",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-southeast"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Washington Wizards",
+                    "url": "https://seatgeek.com/washington-wizards-tickets",
+                    "popularity": 0,
+                    "image_attribution": "nullhttps://www.flickr.com/photos/eviltomthai/5225619246/in/photolist-8XLExy-mAR9kt-9hM6HN-76g3iJ-eXUr8G-eXH2kc-7ecJnY-7edmxo-7ddVAp-5CULfS-5CQscz-67euft-67ev2t-67iJ9A-4JQvZV-67eweM-5Ff83g-4waWEi-4CEF2g-4JVGSo-8XLGxE-8XHFu8-8XHHAV-9hMi3w-9hJczg-eXH2GZ-9eH3JR-jf8yPk-66Vjf6-5EPmdv-bQTu84-bQTueg-bQTuj4-imPju9-922jke-erfZD-9eLa6j-dHhBQJ-dHhCTY-pS5En8-dHhDjU-dHccSK-dHhFUJ-dHcfUk-dHceGn-dHcf9r-dHcein-pvPX3R-oLc94h-5ATHtz"
+                }
+            ],
+            "url": "https://seatgeek.com/celtics-at-wizards-tickets/12-12-2018-washington-district-of-columbia-capital-one-arena/nba/4484664",
+            "created_at": "2018-08-10T20:56:31",
+            "popularity": 0.861,
+            "venue": {
+                "links": [],
+                "metro_code": 511,
+                "postal_code": "20004",
+                "timezone": "America/New_York",
+                "has_upcoming_events": true,
+                "id": 181,
+                "city": "Washington",
+                "extended_address": "Washington, DC 20004",
+                "display_location": "Washington, DC",
+                "state": "DC",
+                "score": 0.79737836,
+                "location": {
+                    "lat": 38.8981,
+                    "lon": -77.0209
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-20T00:00:00Z",
+                    "method": "QRCODE_TM"
+                },
+                "num_upcoming_events": 108,
+                "address": "601 F Street Northwest",
+                "slug": "capital-one-arena",
+                "name": "Capital One Arena",
+                "url": "https://seatgeek.com/venues/capital-one-arena/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Capital One Arena"
+            },
+            "short_title": "Celtics at Wizards",
+            "datetime_utc": "2018-12-13T00:00:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "is_open": false,
+            "id": 4574863,
+            "stats": {
+                "visible_listing_count": null,
+                "dq_bucket_counts": null,
+                "average_price": null,
+                "lowest_price_good_deals": null,
+                "median_price": null,
+                "listing_count": null,
+                "lowest_price": null,
+                "highest_price": null
+            },
+            "title": "Christmas with the Celts",
+            "announce_date": "2018-10-07T00:00:00",
+            "score": 0,
+            "access_method": null,
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "concert",
+                    "parent_id": null,
+                    "id": 2000000
+                }
+            ],
+            "type": "concert",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2018-12-13T20:00:00",
+            "visible_until_utc": "2018-12-14T05:00:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/christmas-with-the-celts-cacf9c/22184/huge.jpg",
+                    "primary": true,
+                    "colors": null,
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/christmas-with-the-celts-cacf9c/22184/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 22184,
+                    "genres": [
+                        {
+                            "name": "Alternative",
+                            "image": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-599992/19783/huge.jpg",
+                            "primary": true,
+                            "id": 457,
+                            "images": {
+                                "500_700": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-bb6e13/19783/500_700.jpg",
+                                "huge": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-599992/19783/huge.jpg",
+                                "fb_100x72": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-833923/19783/fb_100x72.jpg",
+                                "criteo_170_235": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-3dcc68/19783/criteo_170_235.jpg",
+                                "mongo": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-cce1d7/19783/mongo.jpg",
+                                "800x320": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-4b0ad8/19783/800x320.jpg",
+                                "fb_600_315": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-09f4ea/19783/fb_600_315.jpg",
+                                "ipad_mini_explore": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-850aeb/19783/ipad_mini_explore.jpg",
+                                "criteo_130_160": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-59edfd/19783/criteo_130_160.jpg",
+                                "1200x525": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-f840f1/19783/1200x525.jpg",
+                                "criteo_205_100": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-3a7b59/19783/criteo_205_100.jpg",
+                                "1200x627": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-21826c/19783/1200x627.jpg",
+                                "square_mid": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-3fe168/19783/square_mid.jpg",
+                                "triggit_fb_ad": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-d3e03e/19783/triggit_fb_ad.jpg",
+                                "ipad_event_modal": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-baced5/19783/ipad_event_modal.jpg",
+                                "criteo_400_300": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-81dff6/19783/criteo_400_300.jpg",
+                                "136x136": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-c90a68/19783/136x136.jpg",
+                                "banner": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-0b4f62/19783/banner.jpg",
+                                "block": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-a4975b/19783/block.jpg",
+                                "ipad_header": "https://seatgeek.com/images/performers-landscape/the-shadowboxers-07eba4/19783/ipad_header.jpg"
+                            },
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            },
+                            "slug": "alternative"
+                        }
+                    ],
+                    "stats": {
+                        "event_count": 1
+                    },
+                    "image_license": null,
+                    "score": 0.41,
+                    "location": null,
+                    "taxonomies": [
+                        {
+                            "name": "concerts",
+                            "parent_id": null,
+                            "id": 2000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "band",
+                    "num_upcoming_events": 1,
+                    "short_name": "Christmas with the Celts",
+                    "home_venue_id": null,
+                    "slug": "christmas-with-the-celts",
+                    "divisions": null,
+                    "name": "Christmas with the Celts",
+                    "url": "https://seatgeek.com/christmas-with-the-celts-tickets",
+                    "popularity": 0,
+                    "image_attribution": "http://alistcalendar.com/wp-content/uploads/formidable/Christmas-with-Celts-PBS-show1.jpg"
+                }
+            ],
+            "url": "https://seatgeek.com/christmas-with-the-celts-tickets/east-greenwich-rhode-island-the-greenwich-odeum-2018-12-13-8-pm/concert/4574863",
+            "created_at": "2018-10-07T16:58:46",
+            "popularity": 0,
+            "venue": {
+                "links": [],
+                "metro_code": 0,
+                "postal_code": "02818",
+                "timezone": "America/New_York",
+                "has_upcoming_events": true,
+                "id": 62110,
+                "city": "East Greenwich",
+                "extended_address": "East Greenwich, RI 02818",
+                "display_location": "East Greenwich, RI",
+                "state": "RI",
+                "score": 0.39164668,
+                "location": {
+                    "lat": 41.6631,
+                    "lon": -71.4501
+                },
+                "access_method": null,
+                "num_upcoming_events": 8,
+                "address": "59 Main St",
+                "slug": "the-greenwich-odeum",
+                "name": "The Greenwich Odeum",
+                "url": "https://seatgeek.com/venues/the-greenwich-odeum/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "The Greenwich Odeum"
+            },
+            "short_title": "Christmas with the Celts",
+            "datetime_utc": "2018-12-14T01:00:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "is_open": false,
+            "id": 4484681,
+            "stats": {
+                "visible_listing_count": 623,
+                "dq_bucket_counts": [
+                    0,
+                    143,
+                    952,
+                    725,
+                    325,
+                    45,
+                    8,
+                    0
+                ],
+                "average_price": 224,
+                "lowest_price_good_deals": 59,
+                "median_price": 150,
+                "listing_count": 2200,
+                "lowest_price": 54,
+                "highest_price": 5973
+            },
+            "title": "Atlanta Hawks at Boston Celtics",
+            "announce_date": "2018-08-10T00:00:00",
+            "score": 0.741,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-07T00:00:00Z",
+                "method": "QRCODE_TM"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "basketball",
+                    "parent_id": 1000000,
+                    "id": 1030000
+                },
+                {
+                    "name": "nba",
+                    "parent_id": 1030000,
+                    "id": 1030100
+                }
+            ],
+            "type": "nba",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2018-12-14T19:00:00",
+            "visible_until_utc": "2018-12-15T04:00:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#008348",
+                            "#BB9753",
+                            "#A73832",
+                            "#FAB383",
+                            "#061922"
+                        ],
+                        "iconic": "#008348",
+                        "primary": [
+                            "#008348",
+                            "#BB9753"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2088,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "http://creativecommons.org/licenses/by-sa/3.0",
+                    "score": 0.75,
+                    "location": {
+                        "lat": 42.3653,
+                        "lon": -71.0618
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Celtics",
+                    "home_venue_id": 1544,
+                    "slug": "boston-celtics",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Atlantic",
+                            "short_name": "Atlantic",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-atlantic"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Boston Celtics",
+                    "url": "https://seatgeek.com/boston-celtics-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/Category:2013%E2%80%9314_Boston_Celtics_season#/media/File:NBA_-_February_2014_-_Celtics_vs_Spurs_-_TD_Garden_-_2.JPG"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/atlanta-hawks-83d93c/2098/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#E13A3E",
+                            "#C4D600",
+                            "#061922"
+                        ],
+                        "iconic": "#E13A3E",
+                        "primary": [
+                            "#E13A3E",
+                            "#C4D600"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/atlanta-hawks-83d93c/2098/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2098,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+                    "score": 0.7,
+                    "location": {
+                        "lat": 33.7566,
+                        "lon": -84.3969
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Hawks",
+                    "home_venue_id": 127,
+                    "slug": "atlanta-hawks",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Southeast",
+                            "short_name": "Southeast",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-southeast"
+                        }
+                    ],
+                    "name": "Atlanta Hawks",
+                    "url": "https://seatgeek.com/atlanta-hawks-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/File:Philips_Arena_basketball.jpg"
+                }
+            ],
+            "url": "https://seatgeek.com/hawks-at-celtics-tickets/12-14-2018-boston-massachusetts-td-garden/nba/4484681",
+            "created_at": "2018-08-10T20:56:38",
+            "popularity": 0.846,
+            "venue": {
+                "links": [],
+                "metro_code": 506,
+                "postal_code": "02114",
+                "timezone": "America/New_York",
+                "has_upcoming_events": true,
+                "id": 1544,
+                "city": "Boston",
+                "extended_address": "Boston, MA 02114",
+                "display_location": "Boston, MA",
+                "state": "MA",
+                "score": 0.8403977,
+                "location": {
+                    "lat": 42.3653,
+                    "lon": -71.0618
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-07T00:00:00Z",
+                    "method": "QRCODE_TM"
+                },
+                "num_upcoming_events": 101,
+                "address": "100 Legends Way",
+                "slug": "td-garden",
+                "name": "TD Garden",
+                "url": "https://seatgeek.com/venues/td-garden/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "TD Garden"
+            },
+            "short_title": "Hawks at Celtics",
+            "datetime_utc": "2018-12-15T00:00:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "is_open": false,
+            "id": 4484677,
+            "stats": {
+                "visible_listing_count": 572,
+                "dq_bucket_counts": [
+                    179,
+                    460,
+                    272,
+                    106,
+                    62,
+                    157,
+                    287,
+                    0
+                ],
+                "average_price": 140,
+                "lowest_price_good_deals": 19,
+                "median_price": 86,
+                "listing_count": 1553,
+                "lowest_price": 19,
+                "highest_price": 6317
+            },
+            "title": "Boston Celtics at Detroit Pistons",
+            "announce_date": "2018-08-10T00:00:00",
+            "score": 0.684,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2018-08-17T18:00:37Z",
+                "method": "QRCODE_TM"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "basketball",
+                    "parent_id": 1000000,
+                    "id": 1030000
+                },
+                {
+                    "name": "nba",
+                    "parent_id": 1030000,
+                    "id": 1030100
+                }
+            ],
+            "type": "nba",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2018-12-15T19:00:00",
+            "visible_until_utc": "2018-12-16T04:00:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#008348",
+                            "#BB9753",
+                            "#A73832",
+                            "#FAB383",
+                            "#061922"
+                        ],
+                        "iconic": "#008348",
+                        "primary": [
+                            "#008348",
+                            "#BB9753"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2088,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "http://creativecommons.org/licenses/by-sa/3.0",
+                    "score": 0.75,
+                    "location": {
+                        "lat": 42.3653,
+                        "lon": -71.0618
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Celtics",
+                    "home_venue_id": 1544,
+                    "slug": "boston-celtics",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Atlantic",
+                            "short_name": "Atlantic",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-atlantic"
+                        }
+                    ],
+                    "name": "Boston Celtics",
+                    "url": "https://seatgeek.com/boston-celtics-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/Category:2013%E2%80%9314_Boston_Celtics_season#/media/File:NBA_-_February_2014_-_Celtics_vs_Spurs_-_TD_Garden_-_2.JPG"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/detroit-pistons-42ca27/2095/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#ED174C",
+                            "#006BB6",
+                            "#0F586C"
+                        ],
+                        "iconic": "#ED174C",
+                        "primary": [
+                            "#ED174C",
+                            "#006BB6"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/detroit-pistons-42ca27/2095/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2095,
+                    "stats": {
+                        "event_count": 57
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+                    "score": 0.68,
+                    "location": {
+                        "lat": 42.3411,
+                        "lon": -83.0554
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 57,
+                    "short_name": "Pistons",
+                    "home_venue_id": 420444,
+                    "slug": "detroit-pistons",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Central",
+                            "short_name": "Central",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-central"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Detroit Pistons",
+                    "url": "https://seatgeek.com/detroit-pistons-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/File:Atlanta_Hawks_vs._Detroit_Pistons_January_2015_02.jpg"
+                }
+            ],
+            "url": "https://seatgeek.com/celtics-at-pistons-tickets/12-15-2018-detroit-michigan-little-caesars-arena/nba/4484677",
+            "created_at": "2018-08-10T20:56:37",
+            "popularity": 0.804,
+            "venue": {
+                "links": [],
+                "metro_code": 0,
+                "postal_code": "48201",
+                "timezone": "America/Detroit",
+                "has_upcoming_events": true,
+                "id": 420444,
+                "city": "Detroit",
+                "extended_address": "Detroit, MI 48201",
+                "display_location": "Detroit, MI",
+                "state": "MI",
+                "score": 0.7138125,
+                "location": {
+                    "lat": 42.3411,
+                    "lon": -83.0554
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2018-08-17T18:14:19Z",
+                    "method": "QRCODE_TM"
+                },
+                "num_upcoming_events": 106,
+                "address": "66 Sibley St",
+                "slug": "little-caesars-arena",
+                "name": "Little Caesars Arena",
+                "url": "https://seatgeek.com/venues/little-caesars-arena/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Little Caesars Arena"
+            },
+            "short_title": "Celtics at Pistons",
+            "datetime_utc": "2018-12-16T00:00:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "is_open": false,
+            "id": 4484695,
+            "stats": {
+                "visible_listing_count": 658,
+                "dq_bucket_counts": [
+                    22,
+                    692,
+                    853,
+                    366,
+                    287,
+                    177,
+                    126,
+                    0
+                ],
+                "average_price": 198,
+                "lowest_price_good_deals": 44,
+                "median_price": 126,
+                "listing_count": 2523,
+                "lowest_price": 44,
+                "highest_price": 7024
+            },
+            "title": "Phoenix Suns at Boston Celtics",
+            "announce_date": "2018-08-10T00:00:00",
+            "score": 0.724,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-07T00:00:00Z",
+                "method": "QRCODE_TM"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "basketball",
+                    "parent_id": 1000000,
+                    "id": 1030000
+                },
+                {
+                    "name": "nba",
+                    "parent_id": 1030000,
+                    "id": 1030100
+                }
+            ],
+            "type": "nba",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2018-12-19T19:30:00",
+            "visible_until_utc": "2018-12-20T04:30:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#008348",
+                            "#BB9753",
+                            "#A73832",
+                            "#FAB383",
+                            "#061922"
+                        ],
+                        "iconic": "#008348",
+                        "primary": [
+                            "#008348",
+                            "#BB9753"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2088,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "http://creativecommons.org/licenses/by-sa/3.0",
+                    "score": 0.75,
+                    "location": {
+                        "lat": 42.3653,
+                        "lon": -71.0618
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Celtics",
+                    "home_venue_id": 1544,
+                    "slug": "boston-celtics",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Atlantic",
+                            "short_name": "Atlantic",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-atlantic"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Boston Celtics",
+                    "url": "https://seatgeek.com/boston-celtics-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/Category:2013%E2%80%9314_Boston_Celtics_season#/media/File:NBA_-_February_2014_-_Celtics_vs_Spurs_-_TD_Garden_-_2.JPG"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/phoenix-suns-7e210a/2111/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#E56020",
+                            "#1D1160",
+                            "#63717A",
+                            "#F9A01B",
+                            "#B95915",
+                            "#BEC0C2",
+                            "#061922"
+                        ],
+                        "iconic": "#E56020",
+                        "primary": [
+                            "#E56020",
+                            "#1D1160"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/phoenix-suns-7e210a/2111/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2111,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 54
+                    },
+                    "image_license": null,
+                    "score": 0.68,
+                    "location": {
+                        "lat": 33.4458,
+                        "lon": -112.071
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 54,
+                    "short_name": "Suns",
+                    "home_venue_id": 130,
+                    "slug": "phoenix-suns",
+                    "divisions": [
+                        {
+                            "display_name": "Western Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Western - Pacific",
+                            "short_name": "Pacific",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "western-pacific"
+                        }
+                    ],
+                    "name": "Phoenix Suns",
+                    "url": "https://seatgeek.com/phoenix-suns-tickets",
+                    "popularity": 0,
+                    "image_attribution": "Provided to Jeff Ianello"
+                }
+            ],
+            "url": "https://seatgeek.com/suns-at-celtics-tickets/12-19-2018-boston-massachusetts-td-garden/nba/4484695",
+            "created_at": "2018-08-10T20:56:39",
+            "popularity": 0.805,
+            "venue": {
+                "links": [],
+                "metro_code": 506,
+                "postal_code": "02114",
+                "timezone": "America/New_York",
+                "has_upcoming_events": true,
+                "id": 1544,
+                "city": "Boston",
+                "extended_address": "Boston, MA 02114",
+                "display_location": "Boston, MA",
+                "state": "MA",
+                "score": 0.8403977,
+                "location": {
+                    "lat": 42.3653,
+                    "lon": -71.0618
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-07T00:00:00Z",
+                    "method": "QRCODE_TM"
+                },
+                "num_upcoming_events": 101,
+                "address": "100 Legends Way",
+                "slug": "td-garden",
+                "name": "TD Garden",
+                "url": "https://seatgeek.com/venues/td-garden/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "TD Garden"
+            },
+            "short_title": "Suns at Celtics",
+            "datetime_utc": "2018-12-20T00:30:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "is_open": false,
+            "id": 4484667,
+            "stats": {
+                "visible_listing_count": 568,
+                "dq_bucket_counts": [
+                    10,
+                    540,
+                    705,
+                    286,
+                    180,
+                    162,
+                    107,
+                    0
+                ],
+                "average_price": 402,
+                "lowest_price_good_deals": 115,
+                "median_price": 270,
+                "listing_count": 1994,
+                "lowest_price": 116,
+                "highest_price": 6249
+            },
+            "title": "Milwaukee Bucks at Boston Celtics",
+            "announce_date": "2018-08-10T00:00:00",
+            "score": 0.749,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-07T00:00:00Z",
+                "method": "QRCODE_TM"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "basketball",
+                    "parent_id": 1000000,
+                    "id": 1030000
+                },
+                {
+                    "name": "nba",
+                    "parent_id": 1030000,
+                    "id": 1030100
+                }
+            ],
+            "type": "nba",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2018-12-21T20:00:00",
+            "visible_until_utc": "2018-12-22T05:00:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#008348",
+                            "#BB9753",
+                            "#A73832",
+                            "#FAB383",
+                            "#061922"
+                        ],
+                        "iconic": "#008348",
+                        "primary": [
+                            "#008348",
+                            "#BB9753"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2088,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "http://creativecommons.org/licenses/by-sa/3.0",
+                    "score": 0.75,
+                    "location": {
+                        "lat": 42.3653,
+                        "lon": -71.0618
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Celtics",
+                    "home_venue_id": 1544,
+                    "slug": "boston-celtics",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Atlantic",
+                            "short_name": "Atlantic",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-atlantic"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Boston Celtics",
+                    "url": "https://seatgeek.com/boston-celtics-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/Category:2013%E2%80%9314_Boston_Celtics_season#/media/File:NBA_-_February_2014_-_Celtics_vs_Spurs_-_TD_Garden_-_2.JPG"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/milwaukee-bucks-ed5efa/2097/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#00471B",
+                            "#F0EBD2",
+                            "#061922",
+                            "#007DC5"
+                        ],
+                        "iconic": "#00471B",
+                        "primary": [
+                            "#00471B",
+                            "#F0EBD2"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/milwaukee-bucks-ed5efa/2097/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2097,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.67,
+                    "location": {
+                        "lat": 43.0417,
+                        "lon": -87.9162
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Bucks",
+                    "home_venue_id": 435592,
+                    "slug": "milwaukee-bucks",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Central",
+                            "short_name": "Central",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-central"
+                        }
+                    ],
+                    "name": "Milwaukee Bucks",
+                    "url": "https://seatgeek.com/milwaukee-bucks-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/compujeramey/128264488"
+                }
+            ],
+            "url": "https://seatgeek.com/bucks-at-celtics-tickets/12-21-2018-boston-massachusetts-td-garden/nba/4484667",
+            "created_at": "2018-08-10T20:56:37",
+            "popularity": 0.819,
+            "venue": {
+                "links": [],
+                "metro_code": 506,
+                "postal_code": "02114",
+                "timezone": "America/New_York",
+                "has_upcoming_events": true,
+                "id": 1544,
+                "city": "Boston",
+                "extended_address": "Boston, MA 02114",
+                "display_location": "Boston, MA",
+                "state": "MA",
+                "score": 0.8403977,
+                "location": {
+                    "lat": 42.3653,
+                    "lon": -71.0618
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-07T00:00:00Z",
+                    "method": "QRCODE_TM"
+                },
+                "num_upcoming_events": 101,
+                "address": "100 Legends Way",
+                "slug": "td-garden",
+                "name": "TD Garden",
+                "url": "https://seatgeek.com/venues/td-garden/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "TD Garden"
+            },
+            "short_title": "Bucks at Celtics",
+            "datetime_utc": "2018-12-22T01:00:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "is_open": false,
+            "id": 4484719,
+            "stats": {
+                "visible_listing_count": 657,
+                "dq_bucket_counts": [
+                    34,
+                    577,
+                    826,
+                    321,
+                    246,
+                    192,
+                    128,
+                    0
+                ],
+                "average_price": 325,
+                "lowest_price_good_deals": 91,
+                "median_price": 239,
+                "listing_count": 2338,
+                "lowest_price": 72,
+                "highest_price": 6080
+            },
+            "title": "Charlotte Hornets at Boston Celtics",
+            "announce_date": "2018-08-10T00:00:00",
+            "score": 0.734,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-07T00:00:00Z",
+                "method": "QRCODE_TM"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "basketball",
+                    "parent_id": 1000000,
+                    "id": 1030000
+                },
+                {
+                    "name": "nba",
+                    "parent_id": 1030000,
+                    "id": 1030100
+                }
+            ],
+            "type": "nba",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2018-12-23T18:00:00",
+            "visible_until_utc": "2018-12-24T03:00:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#008348",
+                            "#BB9753",
+                            "#A73832",
+                            "#FAB383",
+                            "#061922"
+                        ],
+                        "iconic": "#008348",
+                        "primary": [
+                            "#008348",
+                            "#BB9753"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2088,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "http://creativecommons.org/licenses/by-sa/3.0",
+                    "score": 0.75,
+                    "location": {
+                        "lat": 42.3653,
+                        "lon": -71.0618
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Celtics",
+                    "home_venue_id": 1544,
+                    "slug": "boston-celtics",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Atlantic",
+                            "short_name": "Atlantic",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-atlantic"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Boston Celtics",
+                    "url": "https://seatgeek.com/boston-celtics-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/Category:2013%E2%80%9314_Boston_Celtics_season#/media/File:NBA_-_February_2014_-_Celtics_vs_Spurs_-_TD_Garden_-_2.JPG"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/charlotte-hornets-b0ea0f/2099/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#1D1160",
+                            "#008CA8",
+                            "#A1A1A4"
+                        ],
+                        "iconic": "#1D1160",
+                        "primary": [
+                            "#1D1160",
+                            "#008CA8"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/charlotte-hornets-b0ea0f/2099/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2099,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+                    "score": 0.69,
+                    "location": {
+                        "lat": 35.2248,
+                        "lon": -80.8403
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Hornets",
+                    "home_venue_id": 112,
+                    "slug": "charlotte-hornets",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Southeast",
+                            "short_name": "Southeast",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-southeast"
+                        }
+                    ],
+                    "name": "Charlotte Hornets",
+                    "url": "https://seatgeek.com/charlotte-hornets-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/File:Bobcats_Arena.JPG"
+                }
+            ],
+            "url": "https://seatgeek.com/hornets-at-celtics-tickets/12-23-2018-boston-massachusetts-td-garden/nba/4484719",
+            "created_at": "2018-08-10T20:56:42",
+            "popularity": 0.805,
+            "venue": {
+                "links": [],
+                "metro_code": 506,
+                "postal_code": "02114",
+                "timezone": "America/New_York",
+                "has_upcoming_events": true,
+                "id": 1544,
+                "city": "Boston",
+                "extended_address": "Boston, MA 02114",
+                "display_location": "Boston, MA",
+                "state": "MA",
+                "score": 0.8403977,
+                "location": {
+                    "lat": 42.3653,
+                    "lon": -71.0618
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-07T00:00:00Z",
+                    "method": "QRCODE_TM"
+                },
+                "num_upcoming_events": 101,
+                "address": "100 Legends Way",
+                "slug": "td-garden",
+                "name": "TD Garden",
+                "url": "https://seatgeek.com/venues/td-garden/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "TD Garden"
+            },
+            "short_title": "Hornets at Celtics",
+            "datetime_utc": "2018-12-23T23:00:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "is_open": false,
+            "id": 4481627,
+            "stats": {
+                "visible_listing_count": 746,
+                "dq_bucket_counts": [
+                    118,
+                    935,
+                    885,
+                    425,
+                    300,
+                    336,
+                    273,
+                    0
+                ],
+                "average_price": 497,
+                "lowest_price_good_deals": 132,
+                "median_price": 361,
+                "listing_count": 3274,
+                "lowest_price": 132,
+                "highest_price": 6028
+            },
+            "title": "Philadelphia 76ers at Boston Celtics",
+            "announce_date": "2018-08-08T00:00:00",
+            "score": 0.742,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-07T00:00:00Z",
+                "method": "QRCODE_TM"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "basketball",
+                    "parent_id": 1000000,
+                    "id": 1030000
+                },
+                {
+                    "name": "nba",
+                    "parent_id": 1030000,
+                    "id": 1030100
+                }
+            ],
+            "type": "nba",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2018-12-25T17:30:00",
+            "visible_until_utc": "2018-12-26T02:30:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#008348",
+                            "#BB9753",
+                            "#A73832",
+                            "#FAB383",
+                            "#061922"
+                        ],
+                        "iconic": "#008348",
+                        "primary": [
+                            "#008348",
+                            "#BB9753"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2088,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "http://creativecommons.org/licenses/by-sa/3.0",
+                    "score": 0.75,
+                    "location": {
+                        "lat": 42.3653,
+                        "lon": -71.0618
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Celtics",
+                    "home_venue_id": 1544,
+                    "slug": "boston-celtics",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Atlantic",
+                            "short_name": "Atlantic",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-atlantic"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Boston Celtics",
+                    "url": "https://seatgeek.com/boston-celtics-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/Category:2013%E2%80%9314_Boston_Celtics_season#/media/File:NBA_-_February_2014_-_Celtics_vs_Spurs_-_TD_Garden_-_2.JPG"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/philadelphia-76ers-2d54a7/2091/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#ED174C",
+                            "#006BB6",
+                            "#002B5C",
+                            "#C4CED3"
+                        ],
+                        "iconic": "#ED174C",
+                        "primary": [
+                            "#ED174C",
+                            "#006BB6"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/philadelphia-76ers-2d54a7/2091/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2091,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 55
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by-sa/3.0/",
+                    "score": 0.73,
+                    "location": {
+                        "lat": 39.9012,
+                        "lon": -75.172
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 55,
+                    "short_name": "76ers",
+                    "home_venue_id": 3148,
+                    "slug": "philadelphia-76ers",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Atlantic",
+                            "short_name": "Atlantic",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-atlantic"
+                        }
+                    ],
+                    "name": "Philadelphia 76ers",
+                    "url": "https://seatgeek.com/philadelphia-76ers-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://de.wikipedia.org/wiki/Wells_Fargo_Center_(Philadelphia)#/media/File:Wells_Fargo_Center_2012-02-06.jpg"
+                }
+            ],
+            "url": "https://seatgeek.com/76ers-at-celtics-tickets/12-25-2018-boston-massachusetts-td-garden/nba/4481627",
+            "created_at": "2018-08-08T20:55:12",
+            "popularity": 0.808,
+            "venue": {
+                "links": [],
+                "metro_code": 506,
+                "postal_code": "02114",
+                "timezone": "America/New_York",
+                "has_upcoming_events": true,
+                "id": 1544,
+                "city": "Boston",
+                "extended_address": "Boston, MA 02114",
+                "display_location": "Boston, MA",
+                "state": "MA",
+                "score": 0.8403977,
+                "location": {
+                    "lat": 42.3653,
+                    "lon": -71.0618
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-07T00:00:00Z",
+                    "method": "QRCODE_TM"
+                },
+                "num_upcoming_events": 101,
+                "address": "100 Legends Way",
+                "slug": "td-garden",
+                "name": "TD Garden",
+                "url": "https://seatgeek.com/venues/td-garden/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "TD Garden"
+            },
+            "short_title": "76ers at Celtics",
+            "datetime_utc": "2018-12-25T22:30:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "is_open": false,
+            "id": 4484683,
+            "stats": {
+                "visible_listing_count": 428,
+                "dq_bucket_counts": [
+                    71,
+                    434,
+                    340,
+                    154,
+                    143,
+                    194,
+                    127,
+                    0
+                ],
+                "average_price": 280,
+                "lowest_price_good_deals": 88,
+                "median_price": 204,
+                "listing_count": 1463,
+                "lowest_price": 88,
+                "highest_price": 3366
+            },
+            "title": "Boston Celtics at Houston Rockets",
+            "announce_date": "2018-08-10T00:00:00",
+            "score": 0.703,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-11-30T15:22:20Z",
+                "method": "NONE"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "basketball",
+                    "parent_id": 1000000,
+                    "id": 1030000
+                },
+                {
+                    "name": "nba",
+                    "parent_id": 1030000,
+                    "id": 1030100
+                }
+            ],
+            "type": "nba",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2018-12-27T19:00:00",
+            "visible_until_utc": "2018-12-28T05:00:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#008348",
+                            "#BB9753",
+                            "#A73832",
+                            "#FAB383",
+                            "#061922"
+                        ],
+                        "iconic": "#008348",
+                        "primary": [
+                            "#008348",
+                            "#BB9753"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2088,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "http://creativecommons.org/licenses/by-sa/3.0",
+                    "score": 0.75,
+                    "location": {
+                        "lat": 42.3653,
+                        "lon": -71.0618
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Celtics",
+                    "home_venue_id": 1544,
+                    "slug": "boston-celtics",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Atlantic",
+                            "short_name": "Atlantic",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-atlantic"
+                        }
+                    ],
+                    "name": "Boston Celtics",
+                    "url": "https://seatgeek.com/boston-celtics-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/Category:2013%E2%80%9314_Boston_Celtics_season#/media/File:NBA_-_February_2014_-_Celtics_vs_Spurs_-_TD_Garden_-_2.JPG"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/houston-rockets-a0c891/2114/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#CE1141",
+                            "#C4CED3",
+                            "#061922",
+                            "#FDB927"
+                        ],
+                        "iconic": "#CE1141",
+                        "primary": [
+                            "#CE1141",
+                            "#C4CED3"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/houston-rockets-a0c891/2114/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2114,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.7,
+                    "location": {
+                        "lat": 29.7505,
+                        "lon": -95.3622
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Rockets",
+                    "home_venue_id": 129,
+                    "slug": "houston-rockets",
+                    "divisions": [
+                        {
+                            "display_name": "Western Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Western - Southwest",
+                            "short_name": "Southwest",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "western-southwest"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Houston Rockets",
+                    "url": "https://seatgeek.com/houston-rockets-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/royluck/16357013411/in/photolist-qVpYdB-qD7yhi-mcn9x8-mcnfPB-mcodNZ-mco9NV-mcpiy9-mcpEg1-mcmx8t-mckEur-mcmB9z-mcnuRp-mcpJB5-mcnJNm-mcptLd-mcpAD1-mcoKtg-mconwR-mckUB4-mcnL9C-mcm3ak-mcnX3m-mcnQbW-mco5xG-mcmjDx-mcofXE-mcnZ4A-mcm"
+                }
+            ],
+            "url": "https://seatgeek.com/celtics-at-rockets-tickets/12-27-2018-houston-texas-toyota-center/nba/4484683",
+            "created_at": "2018-08-10T20:56:38",
+            "popularity": 0.769,
+            "venue": {
+                "links": [],
+                "metro_code": 618,
+                "postal_code": "77002",
+                "timezone": "America/Chicago",
+                "has_upcoming_events": true,
+                "id": 129,
+                "city": "Houston",
+                "extended_address": "Houston, TX 77002",
+                "display_location": "Houston, TX",
+                "state": "TX",
+                "score": 0.77011466,
+                "location": {
+                    "lat": 29.7505,
+                    "lon": -95.3622
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-11-30T15:22:20Z",
+                    "method": "NONE"
+                },
+                "num_upcoming_events": 52,
+                "address": "1510 Polk Street",
+                "slug": "toyota-center",
+                "name": "Toyota Center",
+                "url": "https://seatgeek.com/venues/toyota-center/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "Toyota Center"
+            },
+            "short_title": "Celtics at Rockets",
+            "datetime_utc": "2018-12-28T01:00:00",
+            "datetime_tbd": false
+        },
+        {
+            "links": [],
+            "event_promotion": null,
+            "is_open": false,
+            "id": 4485338,
+            "stats": {
+                "visible_listing_count": 419,
+                "dq_bucket_counts": [
+                    87,
+                    271,
+                    279,
+                    155,
+                    125,
+                    185,
+                    133,
+                    0
+                ],
+                "average_price": 256,
+                "lowest_price_good_deals": 55,
+                "median_price": 174,
+                "listing_count": 1235,
+                "lowest_price": 56,
+                "highest_price": 12099
+            },
+            "title": "Boston Celtics at Memphis Grizzlies",
+            "announce_date": "2018-08-10T00:00:00",
+            "score": 0.692,
+            "access_method": {
+                "employee_only": false,
+                "created_at": "2015-07-12T00:00:00Z",
+                "method": "QRCODE_TM"
+            },
+            "announcements": {},
+            "taxonomies": [
+                {
+                    "name": "sports",
+                    "parent_id": null,
+                    "id": 1000000
+                },
+                {
+                    "name": "basketball",
+                    "parent_id": 1000000,
+                    "id": 1030000
+                },
+                {
+                    "name": "nba",
+                    "parent_id": 1030000,
+                    "id": 1030100
+                }
+            ],
+            "type": "nba",
+            "status": "normal",
+            "description": "",
+            "datetime_local": "2018-12-29T19:00:00",
+            "visible_until_utc": "2018-12-30T05:00:00",
+            "time_tbd": false,
+            "date_tbd": false,
+            "performers": [
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg",
+                    "colors": {
+                        "all": [
+                            "#008348",
+                            "#BB9753",
+                            "#A73832",
+                            "#FAB383",
+                            "#061922"
+                        ],
+                        "iconic": "#008348",
+                        "primary": [
+                            "#008348",
+                            "#BB9753"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/boston-celtics-52ae8d/2088/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2088,
+                    "away_team": true,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "http://creativecommons.org/licenses/by-sa/3.0",
+                    "score": 0.75,
+                    "location": {
+                        "lat": 42.3653,
+                        "lon": -71.0618
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Celtics",
+                    "home_venue_id": 1544,
+                    "slug": "boston-celtics",
+                    "divisions": [
+                        {
+                            "display_name": "Eastern Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Eastern - Atlantic",
+                            "short_name": "Atlantic",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "eastern-atlantic"
+                        }
+                    ],
+                    "name": "Boston Celtics",
+                    "url": "https://seatgeek.com/boston-celtics-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://commons.wikimedia.org/wiki/Category:2013%E2%80%9314_Boston_Celtics_season#/media/File:NBA_-_February_2014_-_Celtics_vs_Spurs_-_TD_Garden_-_2.JPG"
+                },
+                {
+                    "image": "https://seatgeek.com/images/performers-landscape/memphis-grizzlies-417fe2/2115/huge.jpg",
+                    "primary": true,
+                    "colors": {
+                        "all": [
+                            "#0F586C",
+                            "#7399C6",
+                            "#BED4E9",
+                            "#FDB927"
+                        ],
+                        "iconic": "#0F586C",
+                        "primary": [
+                            "#0F586C",
+                            "#7399C6"
+                        ]
+                    },
+                    "images": {
+                        "huge": "https://seatgeek.com/images/performers-landscape/memphis-grizzlies-417fe2/2115/huge.jpg"
+                    },
+                    "has_upcoming_events": true,
+                    "id": 2115,
+                    "stats": {
+                        "event_count": 56
+                    },
+                    "image_license": "https://creativecommons.org/licenses/by/2.0/",
+                    "score": 0.68,
+                    "location": {
+                        "lat": 35.1383,
+                        "lon": -90.0522
+                    },
+                    "taxonomies": [
+                        {
+                            "name": "sports",
+                            "parent_id": null,
+                            "id": 1000000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "basketball",
+                            "parent_id": 1000000,
+                            "id": 1030000,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        },
+                        {
+                            "name": "nba",
+                            "parent_id": 1030000,
+                            "id": 1030100,
+                            "document_source": {
+                                "source_type": "ELASTIC",
+                                "generation_type": "FULL"
+                            }
+                        }
+                    ],
+                    "type": "nba",
+                    "num_upcoming_events": 56,
+                    "short_name": "Grizzlies",
+                    "home_venue_id": 1243,
+                    "slug": "memphis-grizzlies",
+                    "divisions": [
+                        {
+                            "display_name": "Western Conference",
+                            "short_name": null,
+                            "division_level": 1,
+                            "display_type": "Conference",
+                            "taxonomy_id": 1030100,
+                            "slug": null
+                        },
+                        {
+                            "display_name": "Western - Southwest",
+                            "short_name": "Southwest",
+                            "division_level": 2,
+                            "display_type": "Division",
+                            "taxonomy_id": 1030100,
+                            "slug": "western-southwest"
+                        }
+                    ],
+                    "home_team": true,
+                    "name": "Memphis Grizzlies",
+                    "url": "https://seatgeek.com/memphis-grizzlies-tickets",
+                    "popularity": 0,
+                    "image_attribution": "https://www.flickr.com/photos/theogeo/3176410418/in/photolist-9QyFB3-9QyGXU-9QyGyL-9QyHrQ-9yuhoZ-9etBij-7NjrkD-6KaKU1-9g7XFv-9gb4uU-9gb4HW-9gb4k7-9gb3Aq-9gb3NU-9g7VLt-9g7T9Z-9gaYGo-9g7Tmv-5NaZ8F-5NaYBt-5NfE7E-5NaXBc-5NbogT-5NaWEM-5NaW8R-5NeLW3-5RZphs-7eLueN-5QBWRp-5QBYvg-5QBFk2-5QBF2V-5QFW9S-5QFVHJ-5QBDcx-5QBDxZ-5QBzrg-5QBAiz-5QFQJJ-484mdz-488nvy-484kfx-484kJV-488n4U-484k5D-484c4t-484bEk-484cir-6z8nVZ-5QFQno/"
+                }
+            ],
+            "url": "https://seatgeek.com/celtics-at-grizzlies-tickets/12-29-2018-memphis-tennessee-fedexforum/nba/4485338",
+            "created_at": "2018-08-10T21:08:19",
+            "popularity": 0.755,
+            "venue": {
+                "links": [],
+                "metro_code": 640,
+                "postal_code": "38103",
+                "timezone": "America/Chicago",
+                "has_upcoming_events": true,
+                "id": 1243,
+                "city": "Memphis",
+                "extended_address": "Memphis, TN 38103",
+                "display_location": "Memphis, TN",
+                "state": "TN",
+                "score": 0.7469174,
+                "location": {
+                    "lat": 35.1383,
+                    "lon": -90.0522
+                },
+                "access_method": {
+                    "employee_only": false,
+                    "created_at": "2015-07-12T00:00:00Z",
+                    "method": "QRCODE_TM"
+                },
+                "num_upcoming_events": 71,
+                "address": "191 Beale Street",
+                "slug": "fedexforum",
+                "name": "FedExForum",
+                "url": "https://seatgeek.com/venues/fedexforum/tickets",
+                "country": "US",
+                "popularity": 0,
+                "name_v2": "FedExForum"
+            },
+            "short_title": "Celtics at Grizzlies",
+            "datetime_utc": "2018-12-30T01:00:00",
+            "datetime_tbd": false
+        }
+    ]
+}
