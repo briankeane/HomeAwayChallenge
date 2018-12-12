@@ -54,11 +54,13 @@ class API: NSObject {
      })
      ````
      */
-    func searchEvents(searchText:String, completion: @escaping ([Event]) -> Void, onError: @escaping (Error) -> Void) -> Void {
+    @discardableResult
+    func searchEvents(searchText:String, completion: @escaping ([Event]) -> Void, onError: @escaping (Error) -> Void) -> Request {
         let url = "\(baseURL)/2/events"
-        let parameters:Parameters = ["q": searchText]
+        let parameters:Parameters = ["q": searchText,
+                                     "client_id": self.clientID ]
         
-        Alamofire.request(url, method: .get, parameters: parameters, encoding: JSONEncoding.default)
+        return Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default)
         .responseJSON {
             (response) -> Void in
             
