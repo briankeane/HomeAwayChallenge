@@ -130,18 +130,33 @@ class APITests: QuickSpec {
                                 expect(sentRequest!.url!.path).to(equal("/2/events"))
                                 expect(sentRequest!.httpMethod).to(equal("GET"))
                                 
+                                //
+                                // check query items
+                                //
+                                let components = URLComponents(url: sentRequest!.url!, resolvingAgainstBaseURL: false)
+                                let actualQueryItems = components!.queryItems
+                                let expectedQueryItems = [
+                                    URLQueryItem(name: "q", value: "Boston Celtics"),
+                                    URLQueryItem(name: "client_id", value: SeatGeekKeys.clientID)
+                                ]
+                                expect(actualQueryItems).to(contain(expectedQueryItems))
+                                
+                                //
                                 // check parsing was successful
+                                //
                                 let event = foundEvents[0]
                                 let responseEvent = (jsonDict?["events"] as! [Dictionary<String, Any?>])[0]
                                 let expectedDisplayLocation = (responseEvent["venue"] as! [String:Any?])["display_location"] as! String
                                 let expectedImageURLString = ((responseEvent["performers"]) as! [[String:Any?]])[0]["image"] as! String
                                 let expectedTitle = responseEvent["title"] as! String
                                 let expectedDateTime = api.dateFromString(dateString: (responseEvent["datetime_local"] as! String))!
+                                let expectedID = responseEvent["id"] as! Int
                                 
                                 expect(event.displayLocation).to(equal((expectedDisplayLocation)))
                                 expect(event.imageURL!.absoluteString).to(equal(expectedImageURLString))
                                 expect(event.title).to(equal(expectedTitle))
                                 expect(event.eventDateTime).to(equal(expectedDateTime))
+                                expect(event.id).to(equal(expectedID))
                                 finished()
                             }, onError: {
                                 (err) in

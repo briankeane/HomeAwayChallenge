@@ -10,12 +10,14 @@ import Foundation
 import SwiftyJSON
 
 class Event {
+    var id:Int
     var title:String
     var eventDateTime:Date
     var imageURL:URL?
     var displayLocation:String
     
-    init(title:String, eventDateTime:Date, displayLocation:String, imageURL:URL?) {
+    init(id:Int, title:String, eventDateTime:Date, displayLocation:String, imageURL:URL?) {
+        self.id = id
         self.title = title
         self.eventDateTime = eventDateTime
         self.displayLocation = displayLocation

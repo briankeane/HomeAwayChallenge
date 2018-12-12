@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Kingfisher
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
@@ -89,7 +90,18 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //------------------------------------------------------------------------------
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        performSearch()
+        if (self.searchBar.text?.isEmpty == true) {
+            clearSearchResults()
+        } else {
+            performSearch()
+        }
+    }
+    
+    //------------------------------------------------------------------------------
+    
+    private func clearSearchResults() {
+        self.searchResults = Array()
+        self.searchResultsTableView.reloadData()
     }
     
     //------------------------------------------------------------------------------
@@ -105,11 +117,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let event = self.searchResults[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: kEventTableViewCell, for: indexPath) as! EventTableViewCell
         cell.titleLabel.text = event.title
-        return cell        
+        cell.performerImageView.kf.setImage(with: event.imageURL)
+        cell.locationLabel.text = event.displayLocation
+        return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -109,6 +109,9 @@ class API: NSObject {
                 guard let displayLocation = eventJSON["venue"]["display_location"].string else {
                     break
                 }
+                guard let id = eventJSON["id"].int else {
+                    break
+                }
                 var imageURL:URL?
                 if let performers = eventJSON["performers"].array {
                     if performers.count > 0 {
@@ -117,7 +120,7 @@ class API: NSObject {
                         }
                     }
                 }
-            events.append(Event(title: title, eventDateTime: self.dateFromString(dateString: eventDateTimeString)!, displayLocation: displayLocation, imageURL: imageURL))
+                events.append(Event(id: id, title: title, eventDateTime: self.dateFromString(dateString: eventDateTimeString)!, displayLocation: displayLocation, imageURL: imageURL))
             }
             
             completion(events)
