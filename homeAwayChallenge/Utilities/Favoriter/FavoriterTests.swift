@@ -12,7 +12,8 @@ import Quick
 import Nimble
 
 class FavoriterTests: QuickSpec {
-    override func spec() {
+    override func spec()
+    {
         describe("Favoriter")
         {
             var favoriter:Favoriter!

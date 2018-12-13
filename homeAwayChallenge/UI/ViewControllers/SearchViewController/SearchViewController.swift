@@ -30,6 +30,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         self.setupSearchBar()
         self.setupTableView()
+        self.setupListeners()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +41,26 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         super.viewWillDisappear(animated)
+    }
+    
+    //------------------------------------------------------------------------------
+    
+    func setupListeners() {
+        NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main){
+            (notification) in
+            guard let id = notification.userInfo?["id"] as? Int else {
+                return
+            }
+            self.reloadCellsWithID(id: id)
+        }
+        
+        NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_REMOVED, object: nil, queue: .main) {
+            (notification) in
+            guard let id = notification.userInfo?["id"] as? Int else {
+                return
+            }
+            self.reloadCellsWithID(id: id)
+        }
     }
     
     //------------------------------------------------------------------------------
@@ -71,6 +92,16 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    //
+    // reload cells where event matches id
+    //
+    func reloadCellsWithID(id:Int) {
+        for (i, event) in self.searchResults.enumerated() {
+            if (event.id == id) {
+                self.searchResultsTableView.reloadRows(at: [IndexPath(row: i, section: 0)], with: UITableView.RowAnimation.none)
+            }
+        }
+    }
     //------------------------------------------------------------------------------
     
     func setupTableView() {
