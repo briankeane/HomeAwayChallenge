@@ -18,6 +18,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // dependency injections
     //
     @objc var api:API! = API()
+    @objc var favoriter:Favoriter! = Favoriter()
     
     /// The current request
     var pendingRequest:Request?
@@ -76,7 +77,9 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.searchResultsTableView.delegate = self
         self.searchResultsTableView.dataSource = self
         
+        
         self.searchResultsTableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: kEventTableViewCell)
+    
     }
     
     //------------------------------------------------------------------------------
@@ -85,6 +88,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.searchBar.setTextFieldColor(color: UIColor(red: 0.165, green: 0.275, blue: 0.345, alpha: 1.00))
         self.searchBar.barStyle = .black
         self.searchBar.delegate = self
+        self.searchBar.setTextFieldTextColor(color: .white)
     }
     
     //------------------------------------------------------------------------------
@@ -95,6 +99,14 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         } else {
             performSearch()
         }
+    }
+    
+    //------------------------------------------------------------------------------
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.searchBar.text = ""
+        self.searchBar(searchBar, textDidChange: "")    // manually call because it's not triggered
+                                                        // automatically
     }
     
     //------------------------------------------------------------------------------
@@ -122,11 +134,20 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.titleLabel.text = event.title
         cell.performerImageView.kf.setImage(with: event.imageURL)
         cell.locationLabel.text = event.displayLocation
+        cell.dateTimeLabel.text = event.eventDateTimeDisplayText
+        cell.selectionStyle = .none
         return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let event = self.searchResults[indexPath.row]
+        let detailVC = self.storyboard?.instantiateViewController(withIdentifier: kDetailViewController) as! DetailViewController
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
 

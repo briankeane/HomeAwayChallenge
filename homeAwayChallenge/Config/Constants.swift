@@ -10,3 +10,8 @@
 // UITableViewCell identifiers
 //
 let kEventTableViewCell = "EventTableViewCell"
+
+//
+// UIViewController identifiers
+//
+let kDetailViewController = "DetailViewController"

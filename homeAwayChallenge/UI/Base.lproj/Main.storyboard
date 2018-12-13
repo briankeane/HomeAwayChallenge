@@ -76,7 +76,7 @@
         <!--Detail View Controller-->
         <scene sceneID="62K-6N-Wh3">
             <objects>
-                <viewController id="gnP-Ku-hpr" customClass="DetailViewController" customModule="homeAwayChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gnP-Ku-hpr" customClass="DetailViewController" customModule="homeAwayChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CZJ-Yd-bIg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

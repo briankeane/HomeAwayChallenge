@@ -20,14 +20,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKD-ex-2L8">
-                        <rect key="frame" x="96" y="21" width="255" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="96" y="21" width="255" height="23.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hn-EM-BHn">
-                        <rect key="frame" x="96" y="40" width="255" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <rect key="frame" x="96" y="40" width="255" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -39,21 +39,31 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoZ-J4-4BA">
-                        <rect key="frame" x="96" y="56" width="255" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <rect key="frame" x="96" y="58.5" width="255" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2Y-h2-qzA">
+                        <rect key="frame" x="8" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="566-5L-qMC"/>
+                            <constraint firstAttribute="height" constant="20" id="Gxs-SS-XZn"/>
+                        </constraints>
+                        <state key="normal" image="heart"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="mKD-ex-2L8" firstAttribute="leading" secondItem="PZC-pi-3zb" secondAttribute="trailing" constant="17" id="7jT-RI-VnP"/>
                     <constraint firstItem="mKD-ex-2L8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="IHQ-jj-qOD"/>
                     <constraint firstItem="4hn-EM-BHn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="29" id="Jtm-QM-dpz"/>
                     <constraint firstItem="PZC-pi-3zb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="K1W-nP-dZs"/>
+                    <constraint firstItem="PZC-pi-3zb" firstAttribute="top" secondItem="H2Y-h2-qzA" secondAttribute="bottom" constant="-14" id="WPZ-B2-069"/>
                     <constraint firstAttribute="trailingMargin" secondItem="4hn-EM-BHn" secondAttribute="trailing" constant="8" id="X3r-yw-Sn1"/>
                     <constraint firstItem="4hn-EM-BHn" firstAttribute="leading" secondItem="PZC-pi-3zb" secondAttribute="trailing" constant="17" id="ZBa-84-P3h"/>
                     <constraint firstItem="yoZ-J4-4BA" firstAttribute="leading" secondItem="PZC-pi-3zb" secondAttribute="trailing" constant="17" id="edi-Nr-ky3"/>
                     <constraint firstItem="yoZ-J4-4BA" firstAttribute="top" secondItem="mKD-ex-2L8" secondAttribute="bottom" constant="14" id="fGp-4a-mZq"/>
+                    <constraint firstItem="PZC-pi-3zb" firstAttribute="leading" secondItem="H2Y-h2-qzA" secondAttribute="trailing" constant="-12" id="gm6-zq-5KS"/>
                     <constraint firstAttribute="trailingMargin" secondItem="mKD-ex-2L8" secondAttribute="trailing" constant="8" id="l1I-WC-bRl"/>
                     <constraint firstItem="PZC-pi-3zb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="oYi-KY-ohK"/>
                     <constraint firstAttribute="trailingMargin" secondItem="yoZ-J4-4BA" secondAttribute="trailing" constant="8" id="vde-Hh-YpX"/>
@@ -70,4 +80,7 @@
             <point key="canvasLocation" x="96.799999999999997" y="73.763118440779621"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="heart" width="76" height="76"/>
+    </resources>
 </document>
