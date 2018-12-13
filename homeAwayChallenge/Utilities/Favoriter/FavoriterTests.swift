@@ -59,6 +59,44 @@ class FavoriterTests: QuickSpec {
                 expect(favoriter.isFavorited(id: 3)).to(equal(false))
                 
             }
+            describe ("Event Notifications")
+            {
+                it ("broadcasts a notification when a favorite is created")
+                {
+                    let notification = Notification(name: FavoriterEvents.FAVORITE_CREATED, object: nil, userInfo: ["id": 123])
+                    expect {
+                        favoriter.favorite(id: 123)
+                    }.toEventually(postNotifications(contain([notification])))
+                }
+            
+                it ("broadcasts a notification when a favorite is removed")
+                {
+                    let notification = Notification(name: FavoriterEvents.FAVORITE_REMOVED, object: nil, userInfo: ["id": 456])
+                    favoriter.favorite(id: 456)
+                    expect {
+                        favoriter.unFavorite(id: 456)
+                    }.toEventually(postNotifications(contain([notification])))
+                }
+                
+                it ("does not broadcast when an item was already favorited")
+                {
+                    let notification = Notification(name: FavoriterEvents.FAVORITE_CREATED, object: nil, userInfo: ["id": 123])
+                    favoriter.favorite(id: 123)
+                    expect {
+                        favoriter.favorite(id: 123)
+                        }.toNotEventually(postNotifications(contain([notification])))
+                }
+                
+                it ("does not broadcast when an item was already UNfavorited")
+                {
+                    let notification = Notification(name: FavoriterEvents.FAVORITE_REMOVED, object: nil, userInfo: ["id": 123])
+                    favoriter.unFavorite(id: 123)
+                    expect {
+                        favoriter.unFavorite(id: 123)
+                    }.toNotEventually(postNotifications(contain([notification])))
+                }
+            
+            }
         }
     }
 }

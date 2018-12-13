@@ -20,6 +20,7 @@
 		4B9148E421C1BE4F00337FB4 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9148E221C1BE4F00337FB4 /* EventTableViewCell.xib */; };
 		4B9148E621C1BEB900337FB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9148E521C1BEB900337FB4 /* Constants.swift */; };
 		4B9986D921C2CFFC008DA4DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9986D821C2CFF9008DA4DA /* Images.xcassets */; };
+		4B9986DB21C2E9B0008DA4DA /* FavoriterEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9986DA21C2E9B0008DA4DA /* FavoriterEvents.swift */; };
 		4BA9779E21C00532002DF5D2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA9779D21C00532002DF5D2 /* DetailViewController.swift */; };
 		4BA977A421C00634002DF5D2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977A321C00634002DF5D2 /* API.swift */; };
 		4BA977AB21C0087F002DF5D2 /* FavoriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977AA21C0087F002DF5D2 /* FavoriterTests.swift */; };
@@ -62,6 +63,7 @@
 		4B9148E221C1BE4F00337FB4 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		4B9148E521C1BEB900337FB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4B9986D821C2CFF9008DA4DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = /Users/briankeane/code/homeAwayChallenge/homeAwayChallenge/Config/Images.xcassets; sourceTree = "<absolute>"; };
+		4B9986DA21C2E9B0008DA4DA /* FavoriterEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriterEvents.swift; sourceTree = "<group>"; };
 		4BA9779D21C00532002DF5D2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4BA977A321C00634002DF5D2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		4BA977A521C00828002DF5D2 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				4BA977AC21C0088D002DF5D2 /* Favoriter.swift */,
+				4B9986DA21C2E9B0008DA4DA /* FavoriterEvents.swift */,
 				4BA977AA21C0087F002DF5D2 /* FavoriterTests.swift */,
 			);
 			path = Favoriter;
@@ -476,6 +479,7 @@
 				4BA977BC21C0774F002DF5D2 /* Event.swift in Sources */,
 				4BA977B121C014F5002DF5D2 /* Keys.swift in Sources */,
 				4BA9779E21C00532002DF5D2 /* DetailViewController.swift in Sources */,
+				4B9986DB21C2E9B0008DA4DA /* FavoriterEvents.swift in Sources */,
 				4BA977BA21C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift in Sources */,
 				4B37809E21BF360B0030F76D /* SearchViewController.swift in Sources */,
 				4B12277721C2A301001DD32A /* Event+dateTimeDisplayText.swift in Sources */,

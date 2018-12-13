@@ -51,6 +51,9 @@
                             <constraint firstAttribute="height" constant="20" id="Gxs-SS-XZn"/>
                         </constraints>
                         <state key="normal" image="heart"/>
+                        <connections>
+                            <action selector="favoritesButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qAl-dj-H6x"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -73,6 +76,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="dateTimeLabel" destination="yoZ-J4-4BA" id="dFY-Md-MFG"/>
+                <outlet property="favoritesButton" destination="H2Y-h2-qzA" id="BSc-ss-SLH"/>
                 <outlet property="locationLabel" destination="4hn-EM-BHn" id="KAZ-dH-l4r"/>
                 <outlet property="performerImageView" destination="PZC-pi-3zb" id="EO2-Ag-BMD"/>
                 <outlet property="titleLabel" destination="mKD-ex-2L8" id="bXy-Ni-Wkj"/>

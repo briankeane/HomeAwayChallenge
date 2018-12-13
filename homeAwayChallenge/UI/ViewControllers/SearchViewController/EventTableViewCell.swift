@@ -13,6 +13,7 @@ class EventTableViewCell: UITableViewCell {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateTimeLabel: UILabel!
     @IBOutlet weak var performerImageView: UIImageView!
+    @IBOutlet weak var favoritesButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,8 +25,11 @@ class EventTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
+    
+    @IBAction func favoritesButtonTapped(_ sender: Any) {
+        
+    }
+    
     
 }

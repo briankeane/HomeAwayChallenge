@@ -31,12 +31,20 @@ class Favoriter: NSObject {
     
     /// sets a favorite
     open func favorite(id:Int) -> Void {
+        let alreadyExisted:Bool = self.isFavorited(id: id)
         UserDefaults.standard.set(true, forKey: "favorite_\(id)")
+        if (!alreadyExisted) {
+            NotificationCenter.default.post(name: FavoriterEvents.FAVORITE_CREATED, object: nil, userInfo: ["id": id])
+        }
     }
     
     /// releases a favorite
     open func unFavorite(id:Int) -> Void {
+        let alreadyExisted:Bool = self.isFavorited(id: id)
         UserDefaults.standard.set(nil, forKey: "favorite_\(id)")
+        if (alreadyExisted) {
+            NotificationCenter.default.post(name: FavoriterEvents.FAVORITE_REMOVED, object: nil, userInfo: ["id": id])
+        }
     }
     
     /// checks to see if an id has been favorited

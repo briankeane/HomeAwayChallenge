@@ -1,6 +1,5 @@
 # Home Away Challenge	
 
-First off -- thanks for the really fun challenge.  It's just big enough to allow you to try some fun stuff, but it doesn't take long at all.
 
 ## Building Locally
 
@@ -44,4 +43,8 @@ First off -- thanks for the really fun challenge.  It's just big enough to allow
 
 ## Areas for Improvement
 1. **Design** -- In all of my projects, I have to hire an outside designer if I want it to look really pro.  I'd love to learn how to be a little more self-reliant at it, but for now I find it very tough.
-2. 
+2. **Autolayout** -- I can do it, but it takes me a while.  I would like to button up some little details like the UINavigationBar appearance on the DetailsViewController, the heart icon on the TableViewCell... eh.
+
+## Thanks
+
+Thanks for having a cool and fun challenge -- it was a blast to make.  I hope you enjoy digging through it!

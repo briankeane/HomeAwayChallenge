@@ -136,6 +136,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.locationLabel.text = event.displayLocation
         cell.dateTimeLabel.text = event.eventDateTimeDisplayText
         cell.selectionStyle = .none
+        
+        if (favoriter.isFavorited(id: event.id)) {
+            cell.favoritesButton.setImage(UIImage(named: "heart"), for: .normal)
+        } else {
+            cell.favoritesButton.setImage(nil, for: .normal)
+        }
         return cell
     }
     
@@ -147,6 +153,9 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     {
         let event = self.searchResults[indexPath.row]
         let detailVC = self.storyboard?.instantiateViewController(withIdentifier: kDetailViewController) as! DetailViewController
+        detailVC.event = event
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
