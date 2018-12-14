@@ -11,6 +11,9 @@ import Alamofire
 import Kingfisher
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+    
+    var observers:[NSObjectProtocol] = Array()
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchResultsTableView: UITableView!
     
@@ -33,10 +36,14 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.setupListeners()
     }
     
+    //------------------------------------------------------------------------------
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)
     }
+    
+    //------------------------------------------------------------------------------
     
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
@@ -46,21 +53,21 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //------------------------------------------------------------------------------
     
     func setupListeners() {
-        NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main){
+        self.observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main){
             (notification) in
             guard let id = notification.userInfo?["id"] as? Int else {
                 return
             }
             self.reloadCellsWithID(id: id)
-        }
+        })
         
-        NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_REMOVED, object: nil, queue: .main) {
+        self.observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_REMOVED, object: nil, queue: .main) {
             (notification) in
             guard let id = notification.userInfo?["id"] as? Int else {
                 return
             }
             self.reloadCellsWithID(id: id)
-        }
+        })
     }
     
     //------------------------------------------------------------------------------
@@ -108,9 +115,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.searchResultsTableView.delegate = self
         self.searchResultsTableView.dataSource = self
         
-        
         self.searchResultsTableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: kEventTableViewCell)
-    
     }
     
     //------------------------------------------------------------------------------
@@ -154,10 +159,13 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     //------------------------------------------------------------------------------
-    
+    // MARK: - UITableViewDataSource & Delegate
+    //------------------------------------------------------------------------------
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.searchResults.count
     }
+    
+    //------------------------------------------------------------------------------
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let event = self.searchResults[indexPath.row]
@@ -176,12 +184,17 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    //------------------------------------------------------------------------------
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    //------------------------------------------------------------------------------
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
+        self.view.endEditing(true)
         let event = self.searchResults[indexPath.row]
         let detailVC = self.storyboard?.instantiateViewController(withIdentifier: kDetailViewController) as! DetailViewController
         detailVC.event = event
@@ -189,5 +202,15 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
+    
+    //------------------------------------------------------------------------------
+    
+    deinit {
+        for observer in self.observers {
+            NotificationCenter.default.removeObserver(observer)
+        }
+    }
+    
+    //------------------------------------------------------------------------------
 }
 

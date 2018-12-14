@@ -17,7 +17,17 @@ class Favoriter: NSObject {
     // with a CoreData implementation
     //
     
-    /// clear all favorites
+    // -----------------------------------------------------------------------------
+    //                          func clearAll
+    // -----------------------------------------------------------------------------
+    /**
+     Wipes all the favorites.
+     
+     ### Usage Example: ###
+     ````
+     favoriter.clearAll()
+     ````
+     */
     open func clearAll() {
         let defaults = UserDefaults.standard
         let dictionary = defaults.dictionaryRepresentation()
@@ -29,7 +39,20 @@ class Favoriter: NSObject {
         }
     }
     
-    /// sets a favorite
+    // -----------------------------------------------------------------------------
+    //                          func favorite(id:Int)
+    // -----------------------------------------------------------------------------
+    /**
+     Sets a favorite.  A FavoriterEvents.FAVORITE_CREATED event will be broadcast
+     on success.
+     
+     - Parameter id: The ID of the event to favorite.
+     
+     ### Usage Example: ###
+     ````
+     favoriter.favorite(id: 123)
+     ````
+     */
     open func favorite(id:Int) -> Void {
         let alreadyExisted:Bool = self.isFavorited(id: id)
         UserDefaults.standard.set(true, forKey: "favorite_\(id)")
@@ -38,7 +61,20 @@ class Favoriter: NSObject {
         }
     }
     
-    /// releases a favorite
+    // -----------------------------------------------------------------------------
+    //                          func unFavorite(id:Int)
+    // -----------------------------------------------------------------------------
+    /**
+     Removes a favorite.  A FavoriterEvents.FAVORITE_REMOVED event will be broadcast
+     on success.
+     
+     - Parameter id: The ID of the event to remove.
+     
+     ### Usage Example: ###
+     ````
+     favoriter.unFavorite(id: 123)
+     ````
+     */
     open func unFavorite(id:Int) -> Void {
         let alreadyExisted:Bool = self.isFavorited(id: id)
         UserDefaults.standard.set(nil, forKey: "favorite_\(id)")
@@ -47,7 +83,21 @@ class Favoriter: NSObject {
         }
     }
     
-    /// checks to see if an id has been favorited
+    // -----------------------------------------------------------------------------
+    //                          func isFavorited(id:Int) -> Bool
+    // -----------------------------------------------------------------------------
+    /**
+     Checks to see if an id is currently favorited
+     
+     - Parameter id: The ID of the event to remove.
+     
+     ### Usage Example: ###
+     ````
+     favoriter.unFavorite(id: 123)
+     ````
+     
+     - Returns: **true** if the item has been favorited
+     */
     open func isFavorited(id:Int) -> Bool {
         return (UserDefaults.standard.bool(forKey: "favorite_\(id)") == true)
     }

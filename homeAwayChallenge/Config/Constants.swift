@@ -9,9 +9,10 @@
 //
 // UITableViewCell identifiers
 //
-let kEventTableViewCell = "EventTableViewCell"
+let kEventTableViewCell     =   "EventTableViewCell"
 
 //
 // UIViewController identifiers
 //
-let kDetailViewController = "DetailViewController"
+let kDetailViewController   =   "DetailViewController"
+let kSearchViewController   =   "SearchViewController"
