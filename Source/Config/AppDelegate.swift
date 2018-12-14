@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  homeAwayChallenge
+//  HomeAwayChallenge
 //
 //  Created by Brian D Keane on 12/10/18.
 //  Copyright © 2018 Brian D Keane. All rights reserved.
@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
          */
-        let container = NSPersistentContainer(name: "homeAwayChallenge")
+        let container = NSPersistentContainer(name: "HomeAwayChallenge")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

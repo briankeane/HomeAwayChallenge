@@ -1,6 +1,6 @@
 //
 //  DetailViewController.swift
-//  homeAwayChallenge
+//  HomeAwayChallenge
 //
 //  Created by Brian D Keane on 12/11/18.
 //  Copyright © 2018 Brian D Keane. All rights reserved.
@@ -36,8 +36,9 @@ class DetailViewController: UIViewController {
         self.fillData()
     }
     
-    //------------------------------------------------------------------------------
-    
+    //
+    // MARK: - Event Responses
+    //
     func setupListeners() {
         self.observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main, using: {
             (notification) in
@@ -60,16 +61,7 @@ class DetailViewController: UIViewController {
             self.reloadFavoritesButton()
         }))
     }
-    
-    //------------------------------------------------------------------------------
-    
-    func fillData() {
-        self.performerImageView.kf.setImage(with: self.event!.imageURL)
-        self.eventDateTimeLabel.text = self.event?.eventDateTimeDisplayText
-        self.locationLabel.text = self.event?.displayLocation
-    }
-    
-    //------------------------------------------------------------------------------
+
     
     func reloadFavoritesButton() {
         DispatchQueue.main.async {
@@ -85,8 +77,6 @@ class DetailViewController: UIViewController {
         }
     }
     
-    //------------------------------------------------------------------------------
-    
     @objc func addTapped() {
         // if it's favorited already
         if (self.favoriter.isFavorited(id: self.event!.id)) {
@@ -96,14 +86,20 @@ class DetailViewController: UIViewController {
         }
     }
     
-    //------------------------------------------------------------------------------
+    //
+    // MARK: - UI Setup
+    //
+    
+    func fillData() {
+        self.performerImageView.kf.setImage(with: self.event!.imageURL)
+        self.eventDateTimeLabel.text = self.event?.eventDateTimeDisplayText
+        self.locationLabel.text = self.event?.displayLocation
+    }
     
     func setupNavigationBar() {
         self.setupMultiLineTitleInNavBar()
         self.setupFavoritesBarButton()
     }
-    
-    //------------------------------------------------------------------------------
     
     func setupFavoritesBarButton() {
         let image = self.favoriter.isFavorited(id: self.event!.id) ? UIImage(named: "heart") : UIImage(named: "addToFavorites")
@@ -114,8 +110,6 @@ class DetailViewController: UIViewController {
         rightBarButtonItem.customView?.contentMode = .scaleAspectFit
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
     }
-    
-    //------------------------------------------------------------------------------
     
     func setupMultiLineTitleInNavBar() {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
@@ -128,8 +122,9 @@ class DetailViewController: UIViewController {
         self.navigationItem.titleView = label
     }
     
-    //------------------------------------------------------------------------------
-    
+    //
+    // MARK: - Cleanup
+    //
     deinit {
         for observer in self.observers {
             NotificationCenter.default.removeObserver(observer)

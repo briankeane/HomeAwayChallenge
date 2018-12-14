@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_homeAwayChallengeVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_homeAwayChallengeVersionString[];
+FOUNDATION_EXPORT double Pods_HomeAwayChallengeVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_HomeAwayChallengeVersionString[];
 

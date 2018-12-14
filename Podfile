@@ -4,7 +4,7 @@ platform :ios, '11.0'
 target 'HomeAwayChallenge' do
   use_frameworks!
 
-  # Pods for homeAwayChallenge
+  # Pods for HomeAwayChallenge
   pod 'Alamofire', '4.5.0'
   pod 'SwiftyJSON', '4.2.0'
   pod 'Kingfisher', '5.0.0'

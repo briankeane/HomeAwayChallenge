@@ -1,12 +1,12 @@
 //
 //  APITests.swift
-//  homeAwayChallengeTests
+//  HomeAwayChallengeTests
 //
 //  Created by Brian D Keane on 12/11/18.
 //  Copyright © 2018 Brian D Keane. All rights reserved.
 //
 
-@testable import homeAwayChallenge
+@testable import HomeAwayChallenge
 import XCTest
 import Quick
 import Nimble

@@ -1,12 +1,12 @@
 //
 //  DetailViewControllerTests.swift
-//  homeAwayChallengeTests
+//  HomeAwayChallengeTests
 //
 //  Created by Brian D Keane on 12/13/18.
 //  Copyright © 2018 Brian D Keane. All rights reserved.
 //
 
-@testable import homeAwayChallenge
+@testable import HomeAwayChallenge
 import XCTest
 import Quick
 import Nimble
@@ -26,6 +26,7 @@ class DetailViewControllerTests: QuickSpec {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 navigationController = UINavigationController()
                 detailVC = (storyboard.instantiateViewController(withIdentifier: kDetailViewController) as! DetailViewController)
+                detailVC.event = event
                 
                 UIApplication.shared.keyWindow?.rootViewController = navigationController
                 
