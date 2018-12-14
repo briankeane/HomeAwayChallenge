@@ -67,7 +67,7 @@
 		4B9148E121C1BE4F00337FB4 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		4B9148E221C1BE4F00337FB4 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		4B9148E521C1BEB900337FB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		4B9986D821C2CFF9008DA4DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = /Users/briankeane/code/HomeAwayChallenge/Source/Config/Images.xcassets; sourceTree = "<absolute>"; };
+		4B9986D821C2CFF9008DA4DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4B9986DA21C2E9B0008DA4DA /* FavoriterEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriterEvents.swift; sourceTree = "<group>"; };
 		4B9986DC21C2F30D008DA4DA /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
 		4B9986DF21C2F3D1008DA4DA /* APIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMock.swift; sourceTree = "<group>"; };

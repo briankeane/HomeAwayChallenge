@@ -61,17 +61,17 @@ class DetailViewController: UIViewController {
             self.reloadFavoritesButton()
         }))
     }
-
+    
     
     func reloadFavoritesButton() {
         DispatchQueue.main.async {
             if (self.favoriter.isFavorited(id: self.event!.id)) {
-                if self.rightBarButtonItem.image != UIImage(named: "heart") {
-                    self.rightBarButtonItem.image = UIImage(named: "heart")
+                if self.rightBarButtonItem.image != UIImage(named: "unfavorite") {
+                    self.rightBarButtonItem.image = UIImage(named: "unfavorite")
                 }
             } else {
-                if self.rightBarButtonItem.image != UIImage(named: "addToFavorites") {
-                    self.rightBarButtonItem.image = UIImage(named: "addToFavorites")
+                if self.rightBarButtonItem.image != UIImage(named: "favorite") {
+                    self.rightBarButtonItem.image = UIImage(named: "favorite")
                 }
             }
         }
@@ -102,7 +102,7 @@ class DetailViewController: UIViewController {
     }
     
     func setupFavoritesBarButton() {
-        let image = self.favoriter.isFavorited(id: self.event!.id) ? UIImage(named: "heart") : UIImage(named: "addToFavorites")
+        let image = self.favoriter.isFavorited(id: self.event!.id) ? UIImage(named: "unfavorite") : UIImage(named: "favorite")
         self.rightBarButtonItem = UIBarButtonItem.init(image: image, style: .done, target: self, action: #selector(DetailViewController.addTapped))
         rightBarButtonItem.customView?.translatesAutoresizingMaskIntoConstraints = false
         rightBarButtonItem.customView?.heightAnchor.constraint(equalToConstant: 24).isActive = true
@@ -118,7 +118,7 @@ class DetailViewController: UIViewController {
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 16.0)
         label.text = self.title!
-    
+        
         self.navigationItem.titleView = label
     }
     
