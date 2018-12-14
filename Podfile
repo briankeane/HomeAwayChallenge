@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '11.0'
 
-target 'homeAwayChallenge' do
+target 'HomeAwayChallenge' do
   use_frameworks!
 
   # Pods for homeAwayChallenge
@@ -9,7 +9,7 @@ target 'homeAwayChallenge' do
   pod 'SwiftyJSON', '4.2.0'
   pod 'Kingfisher', '5.0.0'
 
-  target 'homeAwayChallengeTests' do
+  target 'HomeAwayChallengeTests' do
     inherit! :search_paths
     
     #

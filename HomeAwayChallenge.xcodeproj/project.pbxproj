@@ -53,13 +53,13 @@
 		11AC1DE6F22DC076DB702BF7 /* Pods-homeAwayChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeAwayChallenge.debug.xcconfig"; path = "Target Support Files/Pods-homeAwayChallenge/Pods-homeAwayChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		4B12277621C2A301001DD32A /* Event+dateTimeDisplayText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+dateTimeDisplayText.swift"; sourceTree = "<group>"; };
 		4B12277821C2A326001DD32A /* Event+dateTimeDisplayTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+dateTimeDisplayTextTests.swift"; sourceTree = "<group>"; };
-		4B37809821BF360B0030F76D /* homeAwayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homeAwayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B37809821BF360B0030F76D /* HomeAwayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAwayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B37809B21BF360B0030F76D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B37809D21BF360B0030F76D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4B3780A021BF360B0030F76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B3780A521BF360E0030F76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B3780A721BF360E0030F76D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B3780AC21BF360F0030F76D /* homeAwayChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = homeAwayChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3780AC21BF360F0030F76D /* HomeAwayChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeAwayChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3780B021BF360F0030F76D /* homeAwayChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeAwayChallengeTests.swift; sourceTree = "<group>"; };
 		4B3780B221BF360F0030F76D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B9148D921C17EBD00337FB4 /* searchEventsSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchEventsSuccess.json; sourceTree = "<group>"; };
@@ -122,8 +122,8 @@
 		4B37808F21BF360B0030F76D = {
 			isa = PBXGroup;
 			children = (
-				4B37809A21BF360B0030F76D /* homeAwayChallenge */,
-				4B3780AF21BF360F0030F76D /* homeAwayChallengeTests */,
+				4B37809A21BF360B0030F76D /* HomeAwayChallenge */,
+				4B3780AF21BF360F0030F76D /* HomeAwayChallengeTests */,
 				4B37809921BF360B0030F76D /* Products */,
 				A1538282E83DC8A4BE82F996 /* Pods */,
 				A669D90BC46C5E61DA5F9E41 /* Frameworks */,
@@ -134,13 +134,13 @@
 		4B37809921BF360B0030F76D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B37809821BF360B0030F76D /* homeAwayChallenge.app */,
-				4B3780AC21BF360F0030F76D /* homeAwayChallengeTests.xctest */,
+				4B37809821BF360B0030F76D /* HomeAwayChallenge.app */,
+				4B3780AC21BF360F0030F76D /* HomeAwayChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4B37809A21BF360B0030F76D /* homeAwayChallenge */ = {
+		4B37809A21BF360B0030F76D /* HomeAwayChallenge */ = {
 			isa = PBXGroup;
 			children = (
 				4B3780A721BF360E0030F76D /* Info.plist */,
@@ -149,10 +149,10 @@
 				4BA977A021C00575002DF5D2 /* UI */,
 				4BA977A221C0060B002DF5D2 /* Utilities */,
 			);
-			path = homeAwayChallenge;
+			path = HomeAwayChallenge;
 			sourceTree = "<group>";
 		};
-		4B3780AF21BF360F0030F76D /* homeAwayChallengeTests */ = {
+		4B3780AF21BF360F0030F76D /* HomeAwayChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
 				4B9986DE21C2F3B7008DA4DA /* Mocks */,
@@ -160,7 +160,7 @@
 				4B3780B021BF360F0030F76D /* homeAwayChallengeTests.swift */,
 				4B3780B221BF360F0030F76D /* Info.plist */,
 			);
-			path = homeAwayChallengeTests;
+			path = HomeAwayChallengeTests;
 			sourceTree = "<group>";
 		};
 		4B9148D421C17D9F00337FB4 /* SampleResponses */ = {
@@ -302,9 +302,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B37809721BF360B0030F76D /* homeAwayChallenge */ = {
+		4B37809721BF360B0030F76D /* HomeAwayChallenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B3780B521BF360F0030F76D /* Build configuration list for PBXNativeTarget "homeAwayChallenge" */;
+			buildConfigurationList = 4B3780B521BF360F0030F76D /* Build configuration list for PBXNativeTarget "HomeAwayChallenge" */;
 			buildPhases = (
 				8451789B17A2746DEE51584D /* [CP] Check Pods Manifest.lock */,
 				4B37809421BF360B0030F76D /* Sources */,
@@ -316,14 +316,14 @@
 			);
 			dependencies = (
 			);
-			name = homeAwayChallenge;
+			name = HomeAwayChallenge;
 			productName = homeAwayChallenge;
-			productReference = 4B37809821BF360B0030F76D /* homeAwayChallenge.app */;
+			productReference = 4B37809821BF360B0030F76D /* HomeAwayChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4B3780AB21BF360F0030F76D /* homeAwayChallengeTests */ = {
+		4B3780AB21BF360F0030F76D /* HomeAwayChallengeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B3780B821BF360F0030F76D /* Build configuration list for PBXNativeTarget "homeAwayChallengeTests" */;
+			buildConfigurationList = 4B3780B821BF360F0030F76D /* Build configuration list for PBXNativeTarget "HomeAwayChallengeTests" */;
 			buildPhases = (
 				34CFCA3AA5661B5E2ED7E375 /* [CP] Check Pods Manifest.lock */,
 				4B3780A821BF360F0030F76D /* Sources */,
@@ -336,9 +336,9 @@
 			dependencies = (
 				4B3780AE21BF360F0030F76D /* PBXTargetDependency */,
 			);
-			name = homeAwayChallengeTests;
+			name = HomeAwayChallengeTests;
 			productName = homeAwayChallengeTests;
-			productReference = 4B3780AC21BF360F0030F76D /* homeAwayChallengeTests.xctest */;
+			productReference = 4B3780AC21BF360F0030F76D /* HomeAwayChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -373,8 +373,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B37809721BF360B0030F76D /* homeAwayChallenge */,
-				4B3780AB21BF360F0030F76D /* homeAwayChallengeTests */,
+				4B37809721BF360B0030F76D /* HomeAwayChallenge */,
+				4B3780AB21BF360F0030F76D /* HomeAwayChallengeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -543,7 +543,7 @@
 /* Begin PBXTargetDependency section */
 		4B3780AE21BF360F0030F76D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4B37809721BF360B0030F76D /* homeAwayChallenge */;
+			target = 4B37809721BF360B0030F76D /* HomeAwayChallenge */;
 			targetProxy = 4B3780AD21BF360F0030F76D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -782,7 +782,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B3780B521BF360F0030F76D /* Build configuration list for PBXNativeTarget "homeAwayChallenge" */ = {
+		4B3780B521BF360F0030F76D /* Build configuration list for PBXNativeTarget "HomeAwayChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B3780B621BF360F0030F76D /* Debug */,
@@ -791,7 +791,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B3780B821BF360F0030F76D /* Build configuration list for PBXNativeTarget "homeAwayChallengeTests" */ = {
+		4B3780B821BF360F0030F76D /* Build configuration list for PBXNativeTarget "HomeAwayChallengeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B3780B921BF360F0030F76D /* Debug */,
