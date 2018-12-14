@@ -7,7 +7,7 @@
 2. Fill in the secret keys with your own seatGeek api info.
 
 ## Dependencies:
-Dependencies are managed with CocoaPods, and the Pods folder is included in the repo so no `pod install` is necessary
+Dependencies are managed with CocoaPods.  The Pods folder is checked into the repo so no `pod install` is necessary
 
 1. [Alamofire](https://github.com/Alamofire/Alamofire) -- I know it's just one request, but I figure if this was real, we'd be adding to it.
 2. [Quick](https://github.com/Quick/Quick) and [Nimble](https://github.com/Quick/Nimble) -- I'm fluent in XCTest but I looove the way the Quick and Nimble make the tests so readable.
@@ -33,19 +33,8 @@ Dependencies are managed with CocoaPods, and the Pods folder is included in the 
 ## Testing
 
 * I like tests.  :)
-* **Location:** Test files are right next to the file that they are testing.
-* **JSON:** I like to test against the actual responses, so I copy/paste them into separate JSON files and parse them in the tests. (See `  This makes it really easy to add edge-cases or incorporate any changes in the api.  Examples of this are in `homeAwayChallengeTests/SampleResponses` folder.
+* Located in the root-level `Tests` folder
 
-
-## Strengths
-1. **General Badassness**, if I do say so myself. :)
-2. **Cleanliness/Readability** -- I like for coders who jump into my code in the middle to understand exactly what's happening.
-3. **Modularity** -- Over the last couple years, I've gotten much better at making each module easily replaceable.
-4. **Practical Testing** -- I think I have a pretty good feel for writing tests that make the project more maintainable instead of less changeable (which I've found to be more difficult than it sounds).
-
-## Areas for Improvement
-1. **Design** -- In all of my projects, I have to hire an outside designer if I want it to look really pro.  I'd love to learn how to be a little more self-reliant at it, but for now I find it very tough.
-2. **Autolayout** -- I can do it, but it takes me a while.  I would like to button up some little details like the UINavigationBar appearance on the DetailsViewController, the heart icon on the TableViewCell... eh.
 
 ## Thanks
 
