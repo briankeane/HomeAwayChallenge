@@ -9,6 +9,7 @@
 import Foundation
 
 extension Event {
+    /// A nicely formatted string for display
     var eventDateTimeDisplayText:String {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEE, d MMM yyyy h:mm a"

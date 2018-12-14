@@ -9,6 +9,6 @@
 import Foundation
 
 class FavoriterEvents {
-    static var FAVORITE_CREATED:Notification.Name       =         Notification.Name("Favoriter.FavoriteCreated")
-    static var FAVORITE_REMOVED:Notification.Name       =         Notification.Name("Favoriter.FavoriteRemoved")
+    static var FAVORITE_CREATED:Notification.Name  =  Notification.Name("Favoriter.FavoriteCreated")
+    static var FAVORITE_REMOVED:Notification.Name  =  Notification.Name("Favoriter.FavoriteRemoved")
 }

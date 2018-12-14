@@ -20,6 +20,10 @@ class Vibrator: NSObject {
         self.setupListeners()
     }
     
+    
+    //
+    // listens for favorite and unfavorite events and buzzes for either
+    //
     func setupListeners() {
         self.observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main) {
             (notification) in

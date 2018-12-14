@@ -17,9 +17,6 @@ class Favoriter: NSObject {
     // with a CoreData implementation
     //
     
-    // -----------------------------------------------------------------------------
-    //                          func clearAll
-    // -----------------------------------------------------------------------------
     /**
      Wipes all the favorites.
      
@@ -39,9 +36,6 @@ class Favoriter: NSObject {
         }
     }
     
-    // -----------------------------------------------------------------------------
-    //                          func favorite(id:Int)
-    // -----------------------------------------------------------------------------
     /**
      Sets a favorite.  A FavoriterEvents.FAVORITE_CREATED event will be broadcast
      on success.
@@ -54,16 +48,13 @@ class Favoriter: NSObject {
      ````
      */
     open func favorite(id:Int) -> Void {
-        let alreadyExisted:Bool = self.isFavorited(id: id)
+        let alreadyExisted:Bool = isFavorited(id: id)
         UserDefaults.standard.set(true, forKey: "favorite_\(id)")
         if (!alreadyExisted) {
             NotificationCenter.default.post(name: FavoriterEvents.FAVORITE_CREATED, object: nil, userInfo: ["id": id])
         }
     }
     
-    // -----------------------------------------------------------------------------
-    //                          func unFavorite(id:Int)
-    // -----------------------------------------------------------------------------
     /**
      Removes a favorite.  A FavoriterEvents.FAVORITE_REMOVED event will be broadcast
      on success.
@@ -76,16 +67,13 @@ class Favoriter: NSObject {
      ````
      */
     open func unFavorite(id:Int) -> Void {
-        let alreadyExisted:Bool = self.isFavorited(id: id)
+        let alreadyExisted:Bool = isFavorited(id: id)
         UserDefaults.standard.set(nil, forKey: "favorite_\(id)")
         if (alreadyExisted) {
             NotificationCenter.default.post(name: FavoriterEvents.FAVORITE_REMOVED, object: nil, userInfo: ["id": id])
         }
     }
     
-    // -----------------------------------------------------------------------------
-    //                          func isFavorited(id:Int) -> Bool
-    // -----------------------------------------------------------------------------
     /**
      Checks to see if an id is currently favorited
      

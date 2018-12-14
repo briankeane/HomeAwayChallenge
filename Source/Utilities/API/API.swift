@@ -14,6 +14,7 @@ class API: NSObject {
     var baseURL:String = "https://api.seatgeek.com"
     var clientID:String = SeatGeekKeys.clientID
     
+    // MARK: - Helper Functions
     
     //
     // provides a date, given the type of string format used by the seatGeek api
@@ -31,9 +32,8 @@ class API: NSObject {
         return dateFormatter.date(from: dateString)!
     }
     
-    // -----------------------------------------------------------------------------
-    //                          func searchEvents
-    // -----------------------------------------------------------------------------
+    // MARK: - API Calls
+    
     /**
      Searches the seatgeek api for events
      
@@ -88,7 +88,7 @@ class API: NSObject {
             }
             
             //
-            // parse that shit
+            // parse it
             //
             let dataJSON = JSON(rawValue)
             
