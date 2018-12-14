@@ -34,10 +34,6 @@
 		4BA977B621C0165B002DF5D2 /* Keys-Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977B221C01508002DF5D2 /* Keys-Example.swift */; };
 		4BA977BA21C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977B921C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift */; };
 		4BA977BC21C0774F002DF5D2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977BB21C0774F002DF5D2 /* Event.swift */; };
-		68D33C97348101794063B574 /* Pods_HomeAwayChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46292732DB42520A52CD81E0 /* Pods_HomeAwayChallenge.framework */; };
-		A7B594D0CBC8F908BD871A94 /* Pods_HomeAwayChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FB68F07F486AF9152D324C /* Pods_HomeAwayChallengeTests.framework */; };
-		D7DF9B7091297B3066D85695 /* Pods_homeAwayChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941A22643F46FDEF568F1A23 /* Pods_homeAwayChallengeTests.framework */; };
-		DEC992151DB9EABE0D6024D6 /* Pods_homeAwayChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685D3B583DB023C994AE1279 /* Pods_homeAwayChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +49,6 @@
 /* Begin PBXFileReference section */
 		11AC1DE6F22DC076DB702BF7 /* Pods-homeAwayChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeAwayChallenge.debug.xcconfig"; path = "Target Support Files/Pods-homeAwayChallenge/Pods-homeAwayChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		144F32EADE3983738D092A7B /* Pods-HomeAwayChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayChallenge.release.xcconfig"; path = "Target Support Files/Pods-HomeAwayChallenge/Pods-HomeAwayChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		46292732DB42520A52CD81E0 /* Pods_HomeAwayChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B12277621C2A301001DD32A /* Event+DateTimeDisplayText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+DateTimeDisplayText.swift"; sourceTree = "<group>"; };
 		4B12277821C2A326001DD32A /* Event+DateTimeDisplayTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+DateTimeDisplayTextTests.swift"; sourceTree = "<group>"; };
 		4B37809821BF360B0030F76D /* HomeAwayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAwayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,9 +80,6 @@
 		4BA977B221C01508002DF5D2 /* Keys-Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keys-Example.swift"; sourceTree = "<group>"; };
 		4BA977B921C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+TextViewExtensions.swift"; sourceTree = "<group>"; };
 		4BA977BB21C0774F002DF5D2 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		685D3B583DB023C994AE1279 /* Pods_homeAwayChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homeAwayChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89FB68F07F486AF9152D324C /* Pods_HomeAwayChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		941A22643F46FDEF568F1A23 /* Pods_homeAwayChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homeAwayChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AE83D08F903FFE2F0A3125 /* Pods-HomeAwayChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayChallenge.debug.xcconfig"; path = "Target Support Files/Pods-HomeAwayChallenge/Pods-HomeAwayChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		A62613FFB7DED484294E9630 /* Pods-homeAwayChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeAwayChallenge.release.xcconfig"; path = "Target Support Files/Pods-homeAwayChallenge/Pods-homeAwayChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		B223EFA0621BBC3146342EC7 /* Pods-HomeAwayChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-HomeAwayChallengeTests/Pods-HomeAwayChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,8 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC992151DB9EABE0D6024D6 /* Pods_homeAwayChallenge.framework in Frameworks */,
-				68D33C97348101794063B574 /* Pods_HomeAwayChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7DF9B7091297B3066D85695 /* Pods_homeAwayChallengeTests.framework in Frameworks */,
-				A7B594D0CBC8F908BD871A94 /* Pods_HomeAwayChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +121,6 @@
 				4B3780AF21BF360F0030F76D /* Tests */,
 				4B37809921BF360B0030F76D /* Products */,
 				A1538282E83DC8A4BE82F996 /* Pods */,
-				A669D90BC46C5E61DA5F9E41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -307,17 +294,6 @@
 				FB1E0C684EF30758CFDFA4F4 /* Pods-HomeAwayChallengeTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		A669D90BC46C5E61DA5F9E41 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				685D3B583DB023C994AE1279 /* Pods_homeAwayChallenge.framework */,
-				941A22643F46FDEF568F1A23 /* Pods_homeAwayChallengeTests.framework */,
-				46292732DB42520A52CD81E0 /* Pods_HomeAwayChallenge.framework */,
-				89FB68F07F486AF9152D324C /* Pods_HomeAwayChallengeTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

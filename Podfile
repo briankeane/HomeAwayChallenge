@@ -11,13 +11,8 @@ target 'HomeAwayChallenge' do
 
   target 'HomeAwayChallengeTests' do
     inherit! :search_paths
-    
-    #
-    # I love Quick and Nimble but XCTest is aok too
-    #
     pod 'Quick'
     pod 'Nimble'
-    
     pod 'OHHTTPStubs'
     pod 'OHHTTPStubs/Swift'
   end
