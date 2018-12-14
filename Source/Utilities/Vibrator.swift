@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Classy class name, right?
+/// Handles haptic feedback
 class Vibrator: NSObject {
     //
     // explicitly store observers for clean memory on termination
@@ -38,15 +38,13 @@ class Vibrator: NSObject {
         }
     }
     
-    // -----------------------------------------------------------------------------
-    //                      class func sharedInstance()
-    // -----------------------------------------------------------------------------
-    /// provides a Singleton of the Vibrator for all to use
-    ///
-    /// - returns:
-    ///    `Vibrator` - the central Vibrator instance
-    ///
-    /// ----------------------------------------------------------------------------
+    /**
+    provides a Singleton of the Vibrator for all to use
+    
+    - returns:
+        `Vibrator` - the central Vibrator instance
+    
+    */
     public class func sharedInstance() -> Vibrator
     {
         if (self._instance == nil)

@@ -6,19 +6,21 @@
 1. Copy the contents of `homeAwayChallenge/Config/Keys-Example.swift` to a new file called `Keys.swift` in the same folder.  
 2. Fill in the secret keys with your own seatGeek api info.
 
-## External Libraries Used:
+## Dependencies:
+Dependencies are managed with CocoaPods, and the Pods folder is included in the repo so no `pod install` is necessary
 
 1. [Alamofire](https://github.com/Alamofire/Alamofire) -- I know it's just one request, but I figure if this was real, we'd be adding to it.
 2. [Quick](https://github.com/Quick/Quick) and [Nimble](https://github.com/Quick/Nimble) -- I'm fluent in XCTest but I looove the way the Quick and Nimble make the tests so readable.
 3. [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) -- because parsing JSON is one of the few things I don't like to do in Swift.
 4. [Kingfisher](https://github.com/onevcat/Kingfisher) -- saved me a lot of imageView code in the searchResultsTableView
 
-## Important Files and Folders
+## Overview
 
 #### Utilities
-1. `API.swift` -- handles all networking (yeah, yeah I know... 1 request) :)
+1. `API.swift` -- handles all networking 
 2. `Favoriter.swift` -- handles favoriting
-
+3.	`Vibrator.swift` -- haptic feedback
+ 
 #### Config
 1. `Constants.swift` -- I like to store string identifiers here to avoid spelling mistakes.
 2. `Keys.swift` -- stores everything I do not want in my repository.
