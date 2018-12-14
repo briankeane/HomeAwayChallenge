@@ -12,6 +12,9 @@ import Foundation
 // Uncomment and add your own keys below
 //
 
+//
+// Obtain from: https://seatgeek.com/
+//
 //class SeatGeekKeys {
 //    public static var clientID = "YOUR_SEATGEEK_CLIENT_ID"
 //    public static var clientSecret = "YOUR_SEATGEEK_CLIENT_SECRET"
