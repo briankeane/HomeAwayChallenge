@@ -27,6 +27,7 @@ class DetailViewControllerTests: QuickSpec {
                 navigationController = UINavigationController()
                 detailVC = (storyboard.instantiateViewController(withIdentifier: kDetailViewController) as! DetailViewController)
                 detailVC.event = event
+                favoriterMock = FavoriterMock()
                 
                 UIApplication.shared.keyWindow?.rootViewController = navigationController
                 
