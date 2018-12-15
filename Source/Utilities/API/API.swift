@@ -122,7 +122,6 @@ class API: NSObject {
                 }
                 events.append(Event(id: id, title: title, eventDateTime: self.dateFromString(dateString: eventDateTimeString)!, displayLocation: displayLocation, imageURL: imageURL))
             }
-            
             completion(events)
         }
     }

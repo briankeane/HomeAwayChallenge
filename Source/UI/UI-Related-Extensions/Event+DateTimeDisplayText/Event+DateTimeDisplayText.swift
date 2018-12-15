@@ -13,6 +13,6 @@ extension Event {
     var eventDateTimeDisplayText:String {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEE, d MMM yyyy h:mm a"
-        return formatter.string(from: self.eventDateTime)
+        return formatter.string(from: eventDateTime)
     }
 }

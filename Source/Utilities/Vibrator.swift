@@ -17,15 +17,14 @@ class Vibrator: NSObject {
     
     override init() {
         super.init()
-        self.setupListeners()
+        setupListeners()
     }
-    
-    
+
     //
     // listens for favorite and unfavorite events and buzzes for either
     //
     func setupListeners() {
-        self.observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main) {
+        observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main) {
             (notification) in
             self.buzz()
         })
@@ -37,7 +36,7 @@ class Vibrator: NSObject {
     }
     
     deinit {
-        for observer in self.observers {
+        for observer in observers {
             NotificationCenter.default.removeObserver(observer)
         }
     }
@@ -51,11 +50,11 @@ class Vibrator: NSObject {
     */
     public class func sharedInstance() -> Vibrator
     {
-        if (self._instance == nil)
+        if (_instance == nil)
         {
-            self._instance = Vibrator()
+            _instance = Vibrator()
         }
-        return self._instance!
+        return _instance!
     }
     
     /// internally shared singleton instance
