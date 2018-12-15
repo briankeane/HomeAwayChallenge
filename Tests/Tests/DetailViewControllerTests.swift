@@ -22,12 +22,11 @@ class DetailViewControllerTests: QuickSpec {
             var favoriterMock:FavoriterMock!
             
             func setupViewController() {
-                let event = Event(id: 1, title: "bob", eventDateTime: Date(), displayLocation: "Hell", imageURL: nil)
+                event = Event(id: 1, title: "bob", eventDateTime: Date(), displayLocation: "Hell", imageURL: nil)
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 navigationController = UINavigationController()
                 detailVC = (storyboard.instantiateViewController(withIdentifier: kDetailViewController) as! DetailViewController)
                 detailVC.event = event
-                favoriterMock = FavoriterMock()
                 
                 UIApplication.shared.keyWindow?.rootViewController = navigationController
                 
@@ -41,22 +40,45 @@ class DetailViewControllerTests: QuickSpec {
             }
             
             beforeEach {
+                favoriterMock = FavoriterMock()
+                favoriterMock.clearAll()
                 setupViewController()
             }
             
             it ("displays all the info correctly")
             {
-                
+                expect(detailVC.title).to(equal(event.title))
+                expect(detailVC.eventDateTimeLabel.text).to(equal(event.eventDateTimeDisplayText))
+                expect(detailVC.locationLabel.text).to(equal(event.displayLocation))
             }
             
-            it ("favorites")
+            describe("favorites")
             {
+                it ("initializes with correct barButtonItem for a favorite")
+                {
+                    expect(detailVC.rightBarButtonItem.image).to(equal(UIImage(named: "favorite")))
+                }
                 
-            }
-            
-            it ("responds to successful favorite")
-            {
+                it ("initializes with correct barButtonItem for a non-favorited event")
+                {
+                    favoriterMock.favorite(id: event.id)
+                    setupViewController()
+                    expect(detailVC.rightBarButtonItem.image).to(equal(UIImage(named: "unfavorite")))
+                }
                 
+                it ("responds to favoriting")
+                {
+                    favoriterMock.favorite(id: event.id)
+                    expect(detailVC.rightBarButtonItem.image).toEventually(equal(UIImage(named: "unfavorite")))
+                }
+                
+                it ("responds to unfavoriting")
+                {
+                    favoriterMock.favorite(id: event.id)
+                    setupViewController()
+                    favoriterMock.unFavorite(id: event.id)
+                    expect(detailVC.rightBarButtonItem.image).toEventually(equal(UIImage(named: "favorite")))
+                }
             }
         }
     }
