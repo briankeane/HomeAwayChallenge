@@ -28,6 +28,11 @@ class Vibrator: NSObject {
             (notification) in
             self.buzz()
         })
+        
+        observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_REMOVED, object: nil, queue: .main) {
+            (notification) in
+            self.buzz()
+        })
     }
     
     func buzz() {
