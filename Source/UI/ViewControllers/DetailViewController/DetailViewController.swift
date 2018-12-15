@@ -62,25 +62,66 @@ class DetailViewController: UIViewController {
     
     
     func reloadFavoritesButton() {
-        DispatchQueue.main.async {
-            if (self.favoriter.isFavorited(id: self.event!.id)) {
-                if self.rightBarButtonItem.image != UIImage(named: "unfavorite") {
-                    self.animateUnfavorite()
-                }
-            } else {
-                if self.rightBarButtonItem.image != UIImage(named: "favorite") {
-                    self.rightBarButtonItem.image = UIImage(named: "favorite")
-                }
-            }
+        if (!favoriter.isFavorited(id: event!.id) && showingFavorited()) {
+            animateToIsNotFavorite()
+        } else if (favoriter.isFavorited(id: event!.id) && !showingFavorited()) {
+            animateToIsFavorite()
         }
     }
     
-    func animateUnfavorite() {
-        UIView.animate(withDuration: 3.0, animations: {
-            
-            self.rightBarButtonItem.image = UIImage(named: "unfavorite")
-        }, completion: nil)
+    func showingFavorited() -> Bool {
+        if let image = (rightBarButtonItem.customView as? UIButton)?.image(for: .normal) {
+            if image == UIImage(named: "unfavorite") {
+                return true
+            }
+        }
+        return false
     }
+    
+    func animateToIsFavorite() {
+        (rightBarButtonItem.customView as? UIButton)?.setImage(UIImage(named: "unfavorite"), for: .normal)
+    }
+    
+    func animateToIsNotFavorite() {
+        if let button = self.rightBarButtonItem.customView as? UIButton {
+            //
+            // unhook button during animation
+            //
+            button.removeTarget(self, action: #selector(DetailViewController.addTapped), for: .touchUpInside)
+            
+            
+            button.setImage(UIImage(named: "brokenHeart"), for: .normal)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                UIView.transition(with: button, duration: 0.3, options: .transitionFlipFromRight, animations: {
+                    button.setImage(UIImage(named: "favorite"), for: .normal)
+                })
+                {
+                    (completed) -> Void in
+                    // reenable button
+                    button.addTarget(self, action: #selector(DetailViewController.addTapped), for: .touchUpInside)
+                }
+            }
+        }
+//        UIView.animate(withDuration: 3.0, animations: {
+//
+//            self.rightBarButtonItem.image = UIImage(named: "favorite")
+//        }, completion: nil)
+    }
+    
+    func shake(view: UIView, for duration: TimeInterval = 0.5, withTranslation translation: CGFloat = 10, completion:(()->())?=nil) {
+        let propertyAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio: 0.3) {
+            view.transform = CGAffineTransform(translationX: translation, y: 0)
+        }
+        
+        propertyAnimator.addAnimations({
+            view.transform = CGAffineTransform(translationX: 0, y: 0)
+        }, delayFactor: 0.2)
+        propertyAnimator.addCompletion { (position) in
+            completion?()
+        }
+        propertyAnimator.startAnimation()
+    }
+
     
     @objc func addTapped() {
         // if it's favorited already
@@ -112,11 +153,11 @@ class DetailViewController: UIViewController {
     
     func setupFavoritesBarButton() {
         let image = self.favoriter.isFavorited(id: self.event!.id) ? UIImage(named: "unfavorite") : UIImage(named: "favorite")
-        rightBarButtonItem = UIBarButtonItem.init(image: image, style: .done, target: self, action: #selector(DetailViewController.addTapped))
-        rightBarButtonItem.customView?.translatesAutoresizingMaskIntoConstraints = false
-        rightBarButtonItem.customView?.heightAnchor.constraint(equalToConstant: 24).isActive = true
-        rightBarButtonItem.customView?.widthAnchor.constraint(equalToConstant: 24).isActive = true
-        rightBarButtonItem.customView?.contentMode = .scaleAspectFit
+        let button = UIButton(type: .custom)
+        button.setImage(image, for: .normal)
+        button.frame = CGRect(x: 0.0, y: 0.0, width: 30.0, height: 30.0)
+        button.addTarget(self, action: #selector(DetailViewController.addTapped), for: .touchUpInside)
+        rightBarButtonItem = UIBarButtonItem(customView: button)
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
