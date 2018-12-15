@@ -145,6 +145,10 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                                                         // automatically
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
     private func clearSearchResults() {
         self.searchResults = Array()
         self.searchResultsTableView.reloadData()
@@ -181,8 +185,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return 1
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.view.endEditing(true)
         let event = self.searchResults[indexPath.row]
         let detailVC = self.storyboard?.instantiateViewController(withIdentifier: kDetailViewController) as! DetailViewController
