@@ -96,7 +96,6 @@ class FavoriterTests: QuickSpec {
                         favoriter.unFavorite(id: 123)
                     }.toNotEventually(postNotifications(contain([notification])))
                 }
-            
             }
         }
     }
