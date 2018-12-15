@@ -102,26 +102,7 @@ class DetailViewController: UIViewController {
                 }
             }
         }
-//        UIView.animate(withDuration: 3.0, animations: {
-//
-//            self.rightBarButtonItem.image = UIImage(named: "favorite")
-//        }, completion: nil)
     }
-    
-    func shake(view: UIView, for duration: TimeInterval = 0.5, withTranslation translation: CGFloat = 10, completion:(()->())?=nil) {
-        let propertyAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio: 0.3) {
-            view.transform = CGAffineTransform(translationX: translation, y: 0)
-        }
-        
-        propertyAnimator.addAnimations({
-            view.transform = CGAffineTransform(translationX: 0, y: 0)
-        }, delayFactor: 0.2)
-        propertyAnimator.addCompletion { (position) in
-            completion?()
-        }
-        propertyAnimator.startAnimation()
-    }
-
     
     @objc func addTapped() {
         // if it's favorited already
