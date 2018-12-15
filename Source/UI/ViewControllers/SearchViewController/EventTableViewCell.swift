@@ -18,8 +18,8 @@ class EventTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.performerImageView.clipsToBounds = true
-        self.performerImageView.layer.cornerRadius = 8
+        performerImageView.clipsToBounds = true
+        performerImageView.layer.cornerRadius = 8
         
     }
 

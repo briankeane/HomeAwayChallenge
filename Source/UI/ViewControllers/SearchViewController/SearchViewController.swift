@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SearchViewController.swift
 //  HomeAwayChallenge
 //
 //  Created by Brian D Keane on 12/10/18.

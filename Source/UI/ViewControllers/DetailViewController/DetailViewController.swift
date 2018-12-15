@@ -13,11 +13,9 @@ class DetailViewController: UIViewController {
     
     var observers:[NSObjectProtocol] = Array()
     
-    
     @IBOutlet weak var performerImageView: UIImageView!
     @IBOutlet weak var eventDateTimeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
-    
     
     var event:Event?
     var rightBarButtonItem:UIBarButtonItem!
@@ -29,18 +27,18 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = self.event?.title
+        title = self.event?.title
         
-        self.setupNavigationBar()
-        self.setupListeners()
-        self.fillData()
+        setupNavigationBar()
+        setupListeners()
+        fillData()
     }
     
     //
     // MARK: - Event Responses
     //
     func setupListeners() {
-        self.observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main, using: {
+        observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main, using: {
             (notification) in
             guard let id = notification.userInfo?["id"] as? Int else {
                 return
@@ -50,7 +48,7 @@ class DetailViewController: UIViewController {
             }
             self.reloadFavoritesButton()
         }))
-        self.observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_REMOVED, object: nil, queue: .main, using: {
+        observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_REMOVED, object: nil, queue: .main, using: {
             (notification) in
             guard let id = notification.userInfo?["id"] as? Int else {
                 return
@@ -79,10 +77,10 @@ class DetailViewController: UIViewController {
     
     @objc func addTapped() {
         // if it's favorited already
-        if (self.favoriter.isFavorited(id: self.event!.id)) {
-            self.favoriter.unFavorite(id: self.event!.id)
+        if (favoriter.isFavorited(id: self.event!.id)) {
+            favoriter.unFavorite(id: self.event!.id)
         } else {
-            self.favoriter.favorite(id: self.event!.id)
+            favoriter.favorite(id: self.event!.id)
         }
     }
     
@@ -91,24 +89,24 @@ class DetailViewController: UIViewController {
     //
     
     func fillData() {
-        self.performerImageView.kf.setImage(with: self.event!.imageURL)
-        self.eventDateTimeLabel.text = self.event?.eventDateTimeDisplayText
-        self.locationLabel.text = self.event?.displayLocation
+        performerImageView.kf.setImage(with: self.event!.imageURL)
+        eventDateTimeLabel.text = self.event?.eventDateTimeDisplayText
+        locationLabel.text = self.event?.displayLocation
     }
     
     func setupNavigationBar() {
-        self.setupMultiLineTitleInNavBar()
-        self.setupFavoritesBarButton()
+        setupMultiLineTitleInNavBar()
+        setupFavoritesBarButton()
     }
     
     func setupFavoritesBarButton() {
         let image = self.favoriter.isFavorited(id: self.event!.id) ? UIImage(named: "unfavorite") : UIImage(named: "favorite")
-        self.rightBarButtonItem = UIBarButtonItem.init(image: image, style: .done, target: self, action: #selector(DetailViewController.addTapped))
+        rightBarButtonItem = UIBarButtonItem.init(image: image, style: .done, target: self, action: #selector(DetailViewController.addTapped))
         rightBarButtonItem.customView?.translatesAutoresizingMaskIntoConstraints = false
         rightBarButtonItem.customView?.heightAnchor.constraint(equalToConstant: 24).isActive = true
         rightBarButtonItem.customView?.widthAnchor.constraint(equalToConstant: 24).isActive = true
         rightBarButtonItem.customView?.contentMode = .scaleAspectFit
-        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
     func setupMultiLineTitleInNavBar() {
@@ -119,14 +117,14 @@ class DetailViewController: UIViewController {
         label.font = UIFont.boldSystemFont(ofSize: 16.0)
         label.text = self.title!
         
-        self.navigationItem.titleView = label
+        navigationItem.titleView = label
     }
     
     //
     // MARK: - Cleanup
     //
     deinit {
-        for observer in self.observers {
+        for observer in observers {
             NotificationCenter.default.removeObserver(observer)
         }
     }
