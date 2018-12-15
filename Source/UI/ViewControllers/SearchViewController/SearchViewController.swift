@@ -33,18 +33,18 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupSearchBar()
-        self.setupTableView()
-        self.setupListeners()
+        setupSearchBar()
+        setupTableView()
+        setupListeners()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
         super.viewWillDisappear(animated)
     }
     
@@ -52,7 +52,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: - Event Responses
     //
     func setupListeners() {
-        self.observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main){
+        observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main){
             (notification) in
             guard let id = notification.userInfo?["id"] as? Int else {
                 return
@@ -60,7 +60,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             self.reloadCellsWithID(id: id)
         })
         
-        self.observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_REMOVED, object: nil, queue: .main) {
+        observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_REMOVED, object: nil, queue: .main) {
             (notification) in
             guard let id = notification.userInfo?["id"] as? Int else {
                 return
@@ -75,7 +75,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func reloadCellsWithID(id:Int) {
         for (i, event) in self.searchResults.enumerated() {
             if (event.id == id) {
-                self.searchResultsTableView.reloadRows(at: [IndexPath(row: i, section: 0)], with: UITableView.RowAnimation.none)
+                searchResultsTableView.reloadRows(at: [IndexPath(row: i, section: 0)], with: UITableView.RowAnimation.none)
             }
         }
     }
@@ -85,13 +85,13 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //
     func performSearch() {
         guard let searchText = self.searchBar.text,
-            self.searchBar.text!.isEmpty != true else {
+            searchBar.text!.isEmpty != true else {
                 return
         }
         
-        self.pendingRequest?.cancel()
+        pendingRequest?.cancel()
         
-        self.api.searchEvents(searchText: searchText
+        api.searchEvents(searchText: searchText
         , completion:
             { (events) in
                 //
@@ -111,17 +111,17 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func setupTableView() {
-        self.searchResultsTableView.delegate = self
-        self.searchResultsTableView.dataSource = self
+        searchResultsTableView.delegate = self
+        searchResultsTableView.dataSource = self
         
-        self.searchResultsTableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: kEventTableViewCell)
+        searchResultsTableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: kEventTableViewCell)
     }
     
     func setupSearchBar() {
-        self.searchBar.setTextFieldColor(color: UIColor(red: 0.165, green: 0.275, blue: 0.345, alpha: 1.00))
-        self.searchBar.barStyle = .black
-        self.searchBar.delegate = self
-        self.searchBar.setTextFieldTextColor(color: .white)
+        searchBar.setTextFieldColor(color: UIColor(red: 0.165, green: 0.275, blue: 0.345, alpha: 1.00))
+        searchBar.barStyle = .black
+        searchBar.delegate = self
+        searchBar.setTextFieldTextColor(color: .white)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -140,7 +140,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.searchBar.text = ""
+        searchBar.text = ""
         self.searchBar(searchBar, textDidChange: "")    // manually call because it's not triggered
                                                         // automatically
     }
@@ -150,8 +150,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     private func clearSearchResults() {
-        self.searchResults = Array()
-        self.searchResultsTableView.reloadData()
+        searchResults = Array()
+        searchResultsTableView.reloadData()
     }
     
     //
@@ -186,19 +186,19 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.view.endEditing(true)
+        view.endEditing(true)
         let event = self.searchResults[indexPath.row]
         let detailVC = self.storyboard?.instantiateViewController(withIdentifier: kDetailViewController) as! DetailViewController
         detailVC.event = event
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
-        self.navigationController?.pushViewController(detailVC, animated: true)
+        navigationController?.pushViewController(detailVC, animated: true)
     }
     
     // MARK: - Cleanup
     
     deinit {
-        for observer in self.observers {
+        for observer in observers {
             NotificationCenter.default.removeObserver(observer)
         }
     }
