@@ -14,6 +14,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchResultsTableView: UITableView!
+    @IBOutlet weak var searchBarEmptyView: UIView!
     
     //
     // dependency injections
@@ -128,6 +129,18 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return .lightContent
     }
     
+    func showSearchBarEmptyView() {
+        DispatchQueue.main.async {
+            self.searchBarEmptyView.isHidden = false
+        }
+    }
+    
+    func hideSearchBarEmptyView() {
+        DispatchQueue.main.async {
+            self.searchBarEmptyView.isHidden = true
+        }
+    }
+    
     //
     // MARK: - UISearchBarDelegate
     //
@@ -159,6 +172,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.searchResults.count == 0 ? showSearchBarEmptyView() : hideSearchBarEmptyView()
         return self.searchResults.count
     }
     

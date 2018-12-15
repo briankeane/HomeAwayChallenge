@@ -118,6 +118,25 @@ class SearchViewControllerTests: QuickSpec {
                 let detailVC = navigationController.topViewController as! DetailViewController
                 expect(detailVC.event?.id).to(equal(searchVC.searchResults[2].id))
             }
+            
+            it ("displays the searchBarEmpty view when the search bar is empty")
+            {
+            }
+            
+            it ("removes the searchBarEmpty view when there are results")
+            {
+                searchVC.searchBar.text = "Randy Rogers Band"
+                searchVC.searchBar(searchVC.searchBar, textDidChange: "Randy Rogers Band")
+                expect(searchVC.searchResultsTableView.numberOfRows(inSection: 0)).to(beGreaterThan(0))
+                expect(searchVC.searchBarEmptyView.isHidden).toEventually(beTrue())
+            }
+            
+            it ("removes the searchBarEmpty view when there are results")
+            {
+                searchVC.searchBarCancelButtonClicked(searchVC.searchBar)
+                expect(searchVC.searchResultsTableView.numberOfRows(inSection: 0)).to(equal(0))
+                expect(searchVC.searchBarEmptyView.isHidden).toEventually(beFalse())
+            }
         }
     }
 }
