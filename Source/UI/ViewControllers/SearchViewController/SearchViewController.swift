@@ -167,8 +167,19 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         guard let cell = tableView.dequeueReusableCell(withIdentifier: kEventTableViewCell, for: indexPath) as? EventTableViewCell else {
             return UITableViewCell()
         }
+        formatCell(cell: cell, event: event)
+        return cell
+    }
+    
+    func formatCell(cell:EventTableViewCell, event: Event) {
         cell.titleLabel.text = event.title
-        cell.performerImageView.kf.setImage(with: event.imageURL)
+        
+        if let imageURL = event.imageURL {
+            cell.performerImageView.kf.setImage(with: imageURL, placeholder: UIImage(named: "performer-placeholder"))
+        } else {
+            cell.performerImageView.image = UIImage(named: "image-not-available")
+        }
+        
         cell.locationLabel.text = event.displayLocation
         cell.dateTimeLabel.text = event.eventDateTimeDisplayText
         cell.selectionStyle = .none
@@ -178,7 +189,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         } else {
             cell.favoritesButton.setImage(nil, for: .normal)
         }
-        return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

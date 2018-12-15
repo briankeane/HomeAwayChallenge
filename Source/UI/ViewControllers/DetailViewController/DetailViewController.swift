@@ -65,7 +65,7 @@ class DetailViewController: UIViewController {
         DispatchQueue.main.async {
             if (self.favoriter.isFavorited(id: self.event!.id)) {
                 if self.rightBarButtonItem.image != UIImage(named: "unfavorite") {
-                    self.rightBarButtonItem.image = UIImage(named: "unfavorite")
+                    self.animateUnfavorite()
                 }
             } else {
                 if self.rightBarButtonItem.image != UIImage(named: "favorite") {
@@ -73,6 +73,13 @@ class DetailViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func animateUnfavorite() {
+        UIView.animate(withDuration: 3.0, animations: {
+            
+            self.rightBarButtonItem.image = UIImage(named: "unfavorite")
+        }, completion: nil)
     }
     
     @objc func addTapped() {
@@ -89,7 +96,11 @@ class DetailViewController: UIViewController {
     //
     
     func fillData() {
-        performerImageView.kf.setImage(with: self.event!.imageURL)
+        if let imageURL = event?.imageURL {
+            performerImageView.kf.setImage(with: imageURL, placeholder: UIImage(named: "performer-placeholder"))
+        } else {
+            performerImageView.image = UIImage(named: "image-not-available")
+        }
         eventDateTimeLabel.text = self.event?.eventDateTimeDisplayText
         locationLabel.text = self.event?.displayLocation
     }
