@@ -33,7 +33,9 @@ Dependencies are managed with CocoaPods.  The Pods folder is checked into the re
 ## Testing
 
 * I like tests.  :)
-* Located in the root-level `Tests` folder
+* **Tests:** -- located in `Tests/Tests`
+* **Mocks:** -- located in `Tests/Mocks`
+* **Sample Responses** -- network communication is tested against the actual API responses in `Tests/SampleResponses`
 
 
 ## Thanks

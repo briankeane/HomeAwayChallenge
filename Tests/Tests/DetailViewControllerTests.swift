@@ -54,22 +54,29 @@ class DetailViewControllerTests: QuickSpec {
             
             describe("favorites")
             {
+                //
+                // Helper for getting the favorites image
+                //
+                func getButtonImage () -> UIImage? {
+                    return (detailVC.rightBarButtonItem.customView as? UIButton)?.image(for: .normal)
+                }
+                
                 it ("initializes with correct barButtonItem for a favorite")
                 {
-                    expect(detailVC.rightBarButtonItem.image).to(equal(UIImage(named: "favorite")))
+                    expect(getButtonImage()).to(equal(UIImage(named: "favorite")))
                 }
                 
                 it ("initializes with correct barButtonItem for a non-favorited event")
                 {
                     favoriterMock.favorite(id: event.id)
                     setupViewController()
-                    expect(detailVC.rightBarButtonItem.image).to(equal(UIImage(named: "unfavorite")))
+                    expect(getButtonImage()).to(equal(UIImage(named: "unfavorite")))
                 }
                 
                 it ("responds to favoriting")
                 {
                     favoriterMock.favorite(id: event.id)
-                    expect(detailVC.rightBarButtonItem.image).toEventually(equal(UIImage(named: "unfavorite")))
+                    expect(getButtonImage()).toEventually(equal(UIImage(named: "unfavorite")))
                 }
                 
                 it ("responds to unfavoriting")
@@ -77,7 +84,7 @@ class DetailViewControllerTests: QuickSpec {
                     favoriterMock.favorite(id: event.id)
                     setupViewController()
                     favoriterMock.unFavorite(id: event.id)
-                    expect(detailVC.rightBarButtonItem.image).toEventually(equal(UIImage(named: "favorite")))
+                    expect(getButtonImage()).toEventually(equal(UIImage(named: "favorite")))
                 }
             }
         }
