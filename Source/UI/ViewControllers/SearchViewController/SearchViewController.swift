@@ -31,7 +31,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     /// the current search results
     var searchResults:[Event] = Array()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSearchBar()
@@ -52,6 +51,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //
     // MARK: - Event Responses
     //
+    
     func setupListeners() {
         observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main){
             (notification) in
@@ -84,6 +84,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //
     // MARK: - Search
     //
+    
     func performSearch() {
         guard let searchText = self.searchBar.text,
             searchBar.text!.isEmpty != true else {
@@ -106,7 +107,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 self.searchResults = events
                 self.searchResultsTableView.reloadData()
                 
-        }) { (error) in
+        }) {
+            (error) in
             print(error)
         }
     }
@@ -144,6 +146,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //
     // MARK: - UISearchBarDelegate
     //
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if (self.searchBar.text?.isEmpty == true) {
             clearSearchResults()
@@ -155,7 +158,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = ""
         self.searchBar(searchBar, textDidChange: "")    // manually call because it's not triggered
-                                                        // automatically
+                                                        // automatically through programmatic change
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -219,13 +222,13 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         navigationController?.pushViewController(detailVC, animated: true)
     }
     
+    //
     // MARK: - Cleanup
+    //
     
     deinit {
         for observer in observers {
             NotificationCenter.default.removeObserver(observer)
         }
     }
-    
-    //------------------------------------------------------------------------------
 }

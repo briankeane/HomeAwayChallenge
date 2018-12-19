@@ -53,8 +53,7 @@ class Vibrator: NSObject {
         `Vibrator` - the central Vibrator instance
     
     */
-    public class func sharedInstance() -> Vibrator
-    {
+    public class func sharedInstance() -> Vibrator {
         if (_instance == nil)
         {
             _instance = Vibrator()

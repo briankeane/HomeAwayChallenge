@@ -17,10 +17,10 @@ class Event {
     var displayLocation:String
     
     init(id:Int, title:String, eventDateTime:Date, displayLocation:String, imageURL:URL?) {
-        self.id = id
-        self.title = title
-        self.eventDateTime = eventDateTime
-        self.displayLocation = displayLocation
-        self.imageURL = imageURL
+        self.id                 =   id
+        self.title              =   title
+        self.eventDateTime      =   eventDateTime
+        self.displayLocation    =   displayLocation
+        self.imageURL           =   imageURL
     }
 }

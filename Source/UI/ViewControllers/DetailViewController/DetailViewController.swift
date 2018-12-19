@@ -31,12 +31,13 @@ class DetailViewController: UIViewController {
         
         setupNavigationBar()
         setupListeners()
-        fillData()
+        populateView()
     }
     
     //
     // MARK: - Event Responses
     //
+    
     func setupListeners() {
         observers.append(NotificationCenter.default.addObserver(forName: FavoriterEvents.FAVORITE_CREATED, object: nil, queue: .main, using: {
             (notification) in
@@ -69,6 +70,7 @@ class DetailViewController: UIViewController {
         }
     }
     
+    /// returns true if the display is currently set up as if the event is in favorites
     func showingFavorited() -> Bool {
         if let image = (rightBarButtonItem.customView as? UIButton)?.image(for: .normal) {
             if image == UIImage(named: "unfavorite") {
@@ -97,7 +99,9 @@ class DetailViewController: UIViewController {
                 })
                 {
                     (completed) -> Void in
+                    //
                     // reenable button
+                    //
                     button.addTarget(self, action: #selector(DetailViewController.addTapped), for: .touchUpInside)
                 }
             }
@@ -117,7 +121,7 @@ class DetailViewController: UIViewController {
     // MARK: - UI Setup
     //
     
-    func fillData() {
+    func populateView() {
         if let imageURL = event?.imageURL {
             performerImageView.kf.setImage(with: imageURL, placeholder: UIImage(named: "performer-placeholder"))
         } else {
@@ -156,6 +160,7 @@ class DetailViewController: UIViewController {
     //
     // MARK: - Cleanup
     //
+    
     deinit {
         for observer in observers {
             NotificationCenter.default.removeObserver(observer)

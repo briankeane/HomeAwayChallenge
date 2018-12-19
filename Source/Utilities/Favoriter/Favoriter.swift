@@ -10,8 +10,6 @@ import UIKit
 
 class Favoriter: NSObject {
     
-    let key = "HOME_AWAY_CHALLENGE_FAVORITES"
-    
     //
     // UserDefaults for quick and easy.  Later on prob would replace
     // with a CoreData implementation

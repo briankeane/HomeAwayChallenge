@@ -40,4 +40,4 @@ Dependencies are managed with CocoaPods.  The Pods folder is checked into the re
 
 ## Thanks
 
-Thanks for having a cool and fun challenge -- it was a blast to make.  I hope you enjoy digging through it!
+Thanks for having a cool and fun challenge -- it was a blast to make. 

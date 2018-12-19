@@ -121,6 +121,10 @@ class SearchViewControllerTests: QuickSpec {
             
             it ("displays the searchBarEmpty view when the search bar is empty")
             {
+                searchVC.searchBar.text = ""
+                searchVC.searchBar(searchVC.searchBar, textDidChange: "")
+                expect(searchVC.searchResultsTableView.numberOfRows(inSection: 0)).to(equal(0))
+                expect(searchVC.searchBarEmptyView.isHidden).toEventually(beFalse())
             }
             
             it ("removes the searchBarEmpty view when there are results")

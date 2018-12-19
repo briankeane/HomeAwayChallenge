@@ -9,7 +9,7 @@
 import UIKit
 
 extension UISearchBar {
-    // taken from https://stackoverflow.com/questions/13817330/how-to-change-inside-background-color-of-uisearchbar-component-on-ios
+    // adapted from https://stackoverflow.com/questions/13817330/how-to-change-inside-background-color-of-uisearchbar-component-on-ios
     
     public func getViewElement<T>(type: T.Type) -> T? {
         let svs = subviews.flatMap { $0.subviews }

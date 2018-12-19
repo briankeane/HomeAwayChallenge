@@ -58,8 +58,8 @@ class FavoriterTests: QuickSpec {
                 expect(favoriter.isFavorited(id: 1)).to(equal(false))
                 expect(favoriter.isFavorited(id: 2)).to(equal(false))
                 expect(favoriter.isFavorited(id: 3)).to(equal(false))
-                
             }
+            
             describe ("Event Notifications")
             {
                 it ("broadcasts a notification when a favorite is created")
