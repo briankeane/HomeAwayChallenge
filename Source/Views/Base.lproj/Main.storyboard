@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6P2-Qk-LuF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uP9-jE-6Le">
+            <objects>
+                <navigationController id="6P2-Qk-LuF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QUo-ey-EOY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QzE-6O-GDz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dGo-SK-V9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-697" y="134"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SearchViewController" customModule="HomeAwayChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" text="" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPA-ch-IRG">
+                                <rect key="frame" x="0.0" y="25" width="375" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="A9k-bD-1ci"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.070588235289999995" green="0.19215686269999999" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="app-vn-xs9">
+                                <rect key="frame" x="0.0" y="79" width="375" height="588"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spR-j9-mUR">
+                                <rect key="frame" x="0.0" y="79" width="375" height="588"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search the SeatGeek API" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avd-wj-NoQ">
+                                        <rect key="frame" x="15" y="249" width="345" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="eZx-aL-IEa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="WUb-DB-odt">
+                                        <rect key="frame" x="103.5" y="70" width="168" height="158"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="168" id="QtV-uG-wwt"/>
+                                            <constraint firstAttribute="height" constant="158" id="wdN-Ha-vdb"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17016458725751327" green="0.47914254851936822" blue="0.69337084446751263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="avd-wj-NoQ" firstAttribute="centerX" secondItem="spR-j9-mUR" secondAttribute="centerX" id="GnS-dA-FAn"/>
+                                    <constraint firstItem="avd-wj-NoQ" firstAttribute="top" secondItem="WUb-DB-odt" secondAttribute="bottom" constant="21" id="SPg-Uv-eQP"/>
+                                    <constraint firstItem="avd-wj-NoQ" firstAttribute="centerX" secondItem="WUb-DB-odt" secondAttribute="centerX" id="cNo-0X-Iov"/>
+                                    <constraint firstItem="avd-wj-NoQ" firstAttribute="leading" secondItem="spR-j9-mUR" secondAttribute="leading" constant="15" id="cho-VK-OqZ"/>
+                                    <constraint firstItem="WUb-DB-odt" firstAttribute="top" secondItem="spR-j9-mUR" secondAttribute="top" constant="70" id="xv6-ec-Vn8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.19215686274509802" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="spR-j9-mUR" firstAttribute="height" secondItem="app-vn-xs9" secondAttribute="height" id="25s-7V-zLx"/>
+                            <constraint firstItem="app-vn-xs9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ECl-NE-Elf"/>
+                            <constraint firstItem="app-vn-xs9" firstAttribute="top" secondItem="HPA-ch-IRG" secondAttribute="bottom" constant="12" id="TKE-6V-zFy"/>
+                            <constraint firstItem="HPA-ch-IRG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZWn-a8-W8k"/>
+                            <constraint firstItem="HPA-ch-IRG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cBE-jb-aU7"/>
+                            <constraint firstItem="app-vn-xs9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="khY-is-pTP"/>
+                            <constraint firstItem="spR-j9-mUR" firstAttribute="centerY" secondItem="app-vn-xs9" secondAttribute="centerY" id="maN-95-C7M"/>
+                            <constraint firstItem="spR-j9-mUR" firstAttribute="width" secondItem="app-vn-xs9" secondAttribute="width" id="mha-Fy-8og"/>
+                            <constraint firstItem="spR-j9-mUR" firstAttribute="centerX" secondItem="app-vn-xs9" secondAttribute="centerX" id="sPV-sV-pZk"/>
+                            <constraint firstItem="HPA-ch-IRG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="tRg-l5-WI5"/>
+                            <constraint firstItem="app-vn-xs9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xL8-OY-Krq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c47-9t-JaL"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="HPA-ch-IRG" id="f7j-FP-taG"/>
+                        <outlet property="searchBarEmptyView" destination="spR-j9-mUR" id="9xn-sf-gZP"/>
+                        <outlet property="searchResultsTableView" destination="app-vn-xs9" id="5DZ-HK-0fx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--DetailViewController-->
+        <scene sceneID="3eQ-bK-sA3">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DetailViewController" storyboardName="DetailView" referencedIdentifier="DetailViewController" id="8bJ-ts-ASJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PzN-qS-3vf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="-193"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="searchIcon" width="256" height="256"/>
+    </resources>
+</document>

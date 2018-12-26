@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B12277721C2A301001DD32A /* Event+DateTimeDisplayText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B12277621C2A301001DD32A /* Event+DateTimeDisplayText.swift */; };
 		4B12277921C2A326001DD32A /* Event+DateTimeDisplayTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B12277821C2A326001DD32A /* Event+DateTimeDisplayTextTests.swift */; };
+		4B1B3F5821D3CFFA008E7C02 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B3F5721D3CFFA008E7C02 /* Keys.swift */; };
 		4B37809C21BF360B0030F76D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B37809B21BF360B0030F76D /* AppDelegate.swift */; };
 		4B37809E21BF360B0030F76D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B37809D21BF360B0030F76D /* SearchViewController.swift */; };
 		4B3780A121BF360B0030F76D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B37809F21BF360B0030F76D /* Main.storyboard */; };
@@ -30,10 +31,10 @@
 		4BA977AB21C0087F002DF5D2 /* FavoriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977AA21C0087F002DF5D2 /* FavoriterTests.swift */; };
 		4BA977AD21C0088D002DF5D2 /* Favoriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977AC21C0088D002DF5D2 /* Favoriter.swift */; };
 		4BA977AE21C00907002DF5D2 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977A521C00828002DF5D2 /* APITests.swift */; };
-		4BA977B121C014F5002DF5D2 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977B021C014F5002DF5D2 /* Keys.swift */; };
 		4BA977B621C0165B002DF5D2 /* Keys-Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977B221C01508002DF5D2 /* Keys-Example.swift */; };
 		4BA977BA21C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977B921C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift */; };
 		4BA977BC21C0774F002DF5D2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977BB21C0774F002DF5D2 /* Event.swift */; };
+		4BF63EDC21D3D2A9009D6743 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF63EDB21D3D2A9009D6743 /* DetailView.storyboard */; };
 		8629AFC39C64004E36A52CD0 /* Pods_HomeAwayChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30434CFD56BA3B3646738A03 /* Pods_HomeAwayChallenge.framework */; };
 		B33723ECDE3AB551DA5CEAFA /* Pods_HomeAwayChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4FCC6867511D30568D68EB /* Pods_HomeAwayChallengeTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		30434CFD56BA3B3646738A03 /* Pods_HomeAwayChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B12277621C2A301001DD32A /* Event+DateTimeDisplayText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+DateTimeDisplayText.swift"; sourceTree = "<group>"; };
 		4B12277821C2A326001DD32A /* Event+DateTimeDisplayTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+DateTimeDisplayTextTests.swift"; sourceTree = "<group>"; };
+		4B1B3F5721D3CFFA008E7C02 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		4B37809821BF360B0030F76D /* HomeAwayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAwayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B37809B21BF360B0030F76D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B37809D21BF360B0030F76D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -79,10 +81,10 @@
 		4BA977A521C00828002DF5D2 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		4BA977AA21C0087F002DF5D2 /* FavoriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriterTests.swift; sourceTree = "<group>"; };
 		4BA977AC21C0088D002DF5D2 /* Favoriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favoriter.swift; sourceTree = "<group>"; };
-		4BA977B021C014F5002DF5D2 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		4BA977B221C01508002DF5D2 /* Keys-Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keys-Example.swift"; sourceTree = "<group>"; };
 		4BA977B921C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+TextViewExtensions.swift"; sourceTree = "<group>"; };
 		4BA977BB21C0774F002DF5D2 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4BF63EDB21D3D2A9009D6743 /* DetailView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
 		8C4FCC6867511D30568D68EB /* Pods_HomeAwayChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AE83D08F903FFE2F0A3125 /* Pods-HomeAwayChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayChallenge.debug.xcconfig"; path = "Target Support Files/Pods-HomeAwayChallenge/Pods-HomeAwayChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		A62613FFB7DED484294E9630 /* Pods-homeAwayChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeAwayChallenge.release.xcconfig"; path = "Target Support Files/Pods-homeAwayChallenge/Pods-homeAwayChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,16 @@
 			path = "Event+DateTimeDisplayText";
 			sourceTree = "<group>";
 		};
+		4B1B3F5621D2D13E008E7C02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BF63EDB21D3D2A9009D6743 /* DetailView.storyboard */,
+				4B37809F21BF360B0030F76D /* Main.storyboard */,
+				4B3780A421BF360E0030F76D /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4B37808F21BF360B0030F76D = {
 			isa = PBXGroup;
 			children = (
@@ -144,11 +156,11 @@
 		4B37809A21BF360B0030F76D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4B3780A721BF360E0030F76D /* Info.plist */,
-				4BA9779F21C00554002DF5D2 /* Config */,
+				4BA977A021C00575002DF5D2 /* Controllers */,
 				4BA977BD21C07754002DF5D2 /* Models */,
-				4BA977A021C00575002DF5D2 /* UI */,
+				4BF63EDA21D3D173009D6743 /* Resources */,
 				4BA977A221C0060B002DF5D2 /* Utilities */,
+				4B1B3F5621D2D13E008E7C02 /* Views */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -176,20 +188,20 @@
 		4B9986B421C2C064008DA4DA /* SearchViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4B37809D21BF360B0030F76D /* SearchViewController.swift */,
 				4B9148E121C1BE4F00337FB4 /* EventTableViewCell.swift */,
 				4B9148E221C1BE4F00337FB4 /* EventTableViewCell.xib */,
+				4B37809D21BF360B0030F76D /* SearchViewController.swift */,
 			);
 			path = SearchViewController;
 			sourceTree = "<group>";
 		};
-		4B9986B521C2C356008DA4DA /* UI-Related-Extensions */ = {
+		4B9986B521C2C356008DA4DA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				4B12277A21C2A722001DD32A /* Event+DateTimeDisplayText */,
 				4BA977B921C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift */,
 			);
-			path = "UI-Related-Extensions";
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4B9986DE21C2F3B7008DA4DA /* Mocks */ = {
@@ -221,27 +233,13 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		4BA9779F21C00554002DF5D2 /* Config */ = {
+		4BA977A021C00575002DF5D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4B9986D821C2CFF9008DA4DA /* Images.xcassets */,
-				4B37809B21BF360B0030F76D /* AppDelegate.swift */,
-				4B3780A421BF360E0030F76D /* LaunchScreen.storyboard */,
-				4BA977B021C014F5002DF5D2 /* Keys.swift */,
-				4BA977B221C01508002DF5D2 /* Keys-Example.swift */,
-				4B9148E521C1BEB900337FB4 /* Constants.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		4BA977A021C00575002DF5D2 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				4B37809F21BF360B0030F76D /* Main.storyboard */,
-				4B9986B521C2C356008DA4DA /* UI-Related-Extensions */,
+				4B9986B521C2C356008DA4DA /* Extensions */,
 				4BA977A121C0058E002DF5D2 /* ViewControllers */,
 			);
-			path = UI;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		4BA977A121C0058E002DF5D2 /* ViewControllers */ = {
@@ -286,6 +284,19 @@
 				4BA977BB21C0774F002DF5D2 /* Event.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4BF63EDA21D3D173009D6743 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B37809B21BF360B0030F76D /* AppDelegate.swift */,
+				4B9148E521C1BEB900337FB4 /* Constants.swift */,
+				4B9986D821C2CFF9008DA4DA /* Images.xcassets */,
+				4B3780A721BF360E0030F76D /* Info.plist */,
+				4BA977B221C01508002DF5D2 /* Keys-Example.swift */,
+				4B1B3F5721D3CFFA008E7C02 /* Keys.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		80D8233ED46F874361C44D1B /* Frameworks */ = {
@@ -400,6 +411,7 @@
 				4B9148E421C1BE4F00337FB4 /* EventTableViewCell.xib in Resources */,
 				4B9986D921C2CFFC008DA4DA /* Images.xcassets in Resources */,
 				4B3780A621BF360E0030F76D /* LaunchScreen.storyboard in Resources */,
+				4BF63EDC21D3D2A9009D6743 /* DetailView.storyboard in Resources */,
 				4B3780A121BF360B0030F76D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,7 +534,6 @@
 				4BA977AD21C0088D002DF5D2 /* Favoriter.swift in Sources */,
 				4B9148E621C1BEB900337FB4 /* Constants.swift in Sources */,
 				4BA977BC21C0774F002DF5D2 /* Event.swift in Sources */,
-				4BA977B121C014F5002DF5D2 /* Keys.swift in Sources */,
 				4BA9779E21C00532002DF5D2 /* DetailViewController.swift in Sources */,
 				4B9986DB21C2E9B0008DA4DA /* FavoriterEvents.swift in Sources */,
 				4BA977BA21C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift in Sources */,
@@ -531,6 +542,7 @@
 				4BA977A421C00634002DF5D2 /* API.swift in Sources */,
 				4B9986E521C3180C008DA4DA /* Vibrator.swift in Sources */,
 				4BA977B621C0165B002DF5D2 /* Keys-Example.swift in Sources */,
+				4B1B3F5821D3CFFA008E7C02 /* Keys.swift in Sources */,
 				4B9148E321C1BE4F00337FB4 /* EventTableViewCell.swift in Sources */,
 				4B37809C21BF360B0030F76D /* AppDelegate.swift in Sources */,
 			);
@@ -704,7 +716,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FSRSPV9N9Q;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Source/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -725,7 +737,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FSRSPV9N9Q;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Source/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -746,7 +758,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 896JR349G2;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Source/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -768,7 +780,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 896JR349G2;
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Source/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

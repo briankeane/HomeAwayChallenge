@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="62K-6N-Wh3">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gnP-Ku-hpr" customClass="DetailViewController" customModule="HomeAwayChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CZJ-Yd-bIg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k1X-mb-Q82">
+                                <rect key="frame" x="16" y="60" width="343" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="k1X-mb-Q82" secondAttribute="height" multiplier="49:30" id="Pa1-Ny-coM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPF-y7-oks">
+                                <rect key="frame" x="16" y="295" width="343" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TPF-y7-oks" secondAttribute="height" multiplier="343:34" id="UWZ-gd-4iS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0U-bi-KTq">
+                                <rect key="frame" x="16" y="328" width="343" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q0U-bi-KTq" secondAttribute="height" multiplier="343:34" id="P5q-Yc-esR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q0U-bi-KTq" firstAttribute="leading" secondItem="FnZ-8H-GUD" secondAttribute="leading" constant="16" id="ALN-7x-s9P"/>
+                            <constraint firstItem="k1X-mb-Q82" firstAttribute="leading" secondItem="FnZ-8H-GUD" secondAttribute="leading" constant="16" id="Doj-Zm-9R0"/>
+                            <constraint firstItem="TPF-y7-oks" firstAttribute="leading" secondItem="FnZ-8H-GUD" secondAttribute="leading" constant="16" id="URg-A8-EQe"/>
+                            <constraint firstItem="q0U-bi-KTq" firstAttribute="top" secondItem="k1X-mb-Q82" secondAttribute="bottom" constant="58" id="Z28-Uj-KV5"/>
+                            <constraint firstItem="FnZ-8H-GUD" firstAttribute="trailing" secondItem="q0U-bi-KTq" secondAttribute="trailing" constant="16" id="aXt-79-PjZ"/>
+                            <constraint firstItem="k1X-mb-Q82" firstAttribute="top" secondItem="FnZ-8H-GUD" secondAttribute="top" constant="40" id="b4J-Ie-IrI"/>
+                            <constraint firstItem="FnZ-8H-GUD" firstAttribute="trailing" secondItem="TPF-y7-oks" secondAttribute="trailing" constant="16" id="j3U-60-rTa"/>
+                            <constraint firstItem="TPF-y7-oks" firstAttribute="top" secondItem="k1X-mb-Q82" secondAttribute="bottom" constant="25" id="og7-OR-MaG"/>
+                            <constraint firstItem="FnZ-8H-GUD" firstAttribute="trailing" secondItem="k1X-mb-Q82" secondAttribute="trailing" constant="16" id="yW4-ag-NfQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FnZ-8H-GUD"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventDateTimeLabel" destination="TPF-y7-oks" id="q8e-Wt-VmE"/>
+                        <outlet property="locationLabel" destination="q0U-bi-KTq" id="ZJV-q9-uWe"/>
+                        <outlet property="performerImageView" destination="k1X-mb-Q82" id="MzA-8g-CJJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEZ-vu-EnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.60000000000002" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
