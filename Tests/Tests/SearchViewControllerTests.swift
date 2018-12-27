@@ -21,11 +21,13 @@ class SearchViewControllerTests: QuickSpec {
             var searchVC:SearchViewController!
             var favoriterMock:FavoriterMock!
             var apiMock:APIMock!
+            var alertDisplayerMock:AlertDisplayerMock!
             var events:[Event]!
             
             func loadMocks() {
                 apiMock = APIMock()
                 favoriterMock = FavoriterMock()
+                alertDisplayerMock = AlertDisplayerMock()
                 favoriterMock.clearAll()
                 
                 events = []
@@ -47,6 +49,7 @@ class SearchViewControllerTests: QuickSpec {
                 searchVC.setValuesForKeys([
                     "api": apiMock,
                     "favoriter": favoriterMock,
+                    "alertDisplayer": alertDisplayerMock
                     ])
                 
                 let _ = searchVC.view
@@ -58,27 +61,47 @@ class SearchViewControllerTests: QuickSpec {
                 setupViewController()
             }
             
-            it ("performs a search and displays results accurately")
+            describe ("Search Error Handling")
             {
-                searchVC.searchBar.text = "Randy Rogers Band"
-                searchVC.searchBar(searchVC.searchBar, textDidChange: "Randy Rogers Band")
-                expect(searchVC.searchResultsTableView.numberOfRows(inSection: 0)).to(equal(events.count))
-                
-                let cell = searchVC.searchResultsTableView.cellForRow(at: IndexPath(row: 1, section: 0)) as! EventTableViewCell
-                expect(cell.titleLabel.text!).to(equal(events[1].title))
-                expect(cell.dateTimeLabel.text!).to(equal(events[1].eventDateTimeDisplayText))
-                expect(cell.locationLabel.text!).to(equal(events[1].displayLocation))
+                it ("gracefully alerts the user if there was an error in the search")
+                {
+                    apiMock.searchEventsShouldError = true
+                    apiMock.searchEventsError = NSError(domain: "API Error", code: 1000, userInfo: ["message": "The internet connection appears to be offline"])
+                    searchVC.searchBar.text = "Randy Rogers Band"
+                    searchVC.searchBar(searchVC.searchBar, textDidChange: "Randy Rogers Band")
+                    expect(alertDisplayerMock.displayAlertCallCount).toEventually(equal(1))
+                    expect((alertDisplayerMock.displayAlertArgs[0]["title"] as! String).lowercased()).to(contain("error"))
+                    expect((alertDisplayerMock.displayAlertArgs[0]["message"] as! String).lowercased()).to(contain("connection"))
+                }
             }
             
-            it ("cancels a search")
+            describe ("Performing Searches")
             {
-                searchVC.searchBar.text = "Randy Rogers Band"
-                searchVC.searchBar(searchVC.searchBar, textDidChange: "Randy Rogers Band")
-                expect(searchVC.searchResultsTableView.numberOfRows(inSection: 0)).to(beGreaterThan(0))
-                searchVC.searchBarCancelButtonClicked(searchVC.searchBar)
-                expect(searchVC.searchResultsTableView.numberOfRows(inSection: 0)).to(equal(0))
-                expect(searchVC.searchBar.text).to(equal(""))
+                it ("performs a search and displays results accurately")
+                {
+                    searchVC.searchBar.text = "Randy Rogers Band"
+                    searchVC.searchBar(searchVC.searchBar, textDidChange: "Randy Rogers Band")
+                    expect(searchVC.searchResultsTableView.numberOfRows(inSection: 0)).to(equal(events.count))
+                    
+                    let cell = searchVC.searchResultsTableView.cellForRow(at: IndexPath(row: 1, section: 0)) as! EventTableViewCell
+                    expect(cell.titleLabel.text!).to(equal(events[1].title))
+                    expect(cell.dateTimeLabel.text!).to(equal(events[1].eventDateTimeDisplayText))
+                    expect(cell.locationLabel.text!).to(equal(events[1].displayLocation))
+                }
+                
+                
+                it ("cancels a search")
+                {
+                    searchVC.searchBar.text = "Randy Rogers Band"
+                    searchVC.searchBar(searchVC.searchBar, textDidChange: "Randy Rogers Band")
+                    expect(searchVC.searchResultsTableView.numberOfRows(inSection: 0)).to(beGreaterThan(0))
+                    searchVC.searchBarCancelButtonClicked(searchVC.searchBar)
+                    expect(searchVC.searchResultsTableView.numberOfRows(inSection: 0)).to(equal(0))
+                    expect(searchVC.searchBar.text).to(equal(""))
+                }
+                
             }
+            
             
             it ("accurately displays favorites")
             {

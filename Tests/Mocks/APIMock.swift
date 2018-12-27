@@ -16,10 +16,10 @@ class APIMock: API {
     var searchEventsError:Error?
     var searchEventsShouldError:Bool = false
     override func searchEvents(searchText: String, completion: @escaping ([Event]) -> Void, onError: @escaping (Error) -> Void) -> Request {
-        if let searchEventsResults = searchEventsResults {
-            completion(searchEventsResults)
-        } else {
+        if (searchEventsShouldError == true) {
             onError(searchEventsError!)
+        } else {
+            completion(searchEventsResults!)
         }
         return request(URL(string: "JUST_A_PLACEHOLDER")!)
     }

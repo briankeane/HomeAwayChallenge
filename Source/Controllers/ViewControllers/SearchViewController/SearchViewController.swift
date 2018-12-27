@@ -21,6 +21,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //
     @objc var api:API! = API()
     @objc var favoriter:Favoriter! = Favoriter()
+    @objc var alertDisplayer:AlertDisplayer = AlertDisplayer()
     
     /// stores all observers for cleanup in deinit
     var observers:[NSObjectProtocol] = Array()
@@ -109,7 +110,11 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 
         }) {
             (error) in
-            print(error)
+            var message = "An Unknown Error Occurred"
+            if let customMessage = (error as NSError).userInfo["message"] as? String {
+                message = customMessage
+            }
+            self.alertDisplayer.displayAlert(self, title: "Error", message: message, completion: nil)
         }
     }
     

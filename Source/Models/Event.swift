@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class Event {
+struct Event {
     var id:Int
     var title:String
     var eventDateTime:Date

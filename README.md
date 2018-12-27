@@ -3,7 +3,7 @@
 
 ## Building Locally
 
-1. Copy the contents of `Source/Config/Keys-Example.swift` to a new file called `Keys.swift` in the same folder.  
+1. Create a new file at `Source/Resources/Keys.swift` and fill it with the contents of `Source/Resources/Keys-Example.swift`.  
 2. Fill in the secret keys with your own seatGeek api info.
 
 ## Overview

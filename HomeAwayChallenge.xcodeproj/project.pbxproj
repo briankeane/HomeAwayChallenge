@@ -34,6 +34,8 @@
 		4BA977B621C0165B002DF5D2 /* Keys-Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977B221C01508002DF5D2 /* Keys-Example.swift */; };
 		4BA977BA21C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977B921C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift */; };
 		4BA977BC21C0774F002DF5D2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA977BB21C0774F002DF5D2 /* Event.swift */; };
+		4BC23E3921D5365E00C2AA99 /* AlertDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC23E3821D5365E00C2AA99 /* AlertDisplayer.swift */; };
+		4BC23E3B21D539DF00C2AA99 /* AlertDisplayerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC23E3A21D539DF00C2AA99 /* AlertDisplayerMock.swift */; };
 		4BF63EDC21D3D2A9009D6743 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF63EDB21D3D2A9009D6743 /* DetailView.storyboard */; };
 		8629AFC39C64004E36A52CD0 /* Pods_HomeAwayChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30434CFD56BA3B3646738A03 /* Pods_HomeAwayChallenge.framework */; };
 		B33723ECDE3AB551DA5CEAFA /* Pods_HomeAwayChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4FCC6867511D30568D68EB /* Pods_HomeAwayChallengeTests.framework */; };
@@ -84,6 +86,8 @@
 		4BA977B221C01508002DF5D2 /* Keys-Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keys-Example.swift"; sourceTree = "<group>"; };
 		4BA977B921C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+TextViewExtensions.swift"; sourceTree = "<group>"; };
 		4BA977BB21C0774F002DF5D2 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4BC23E3821D5365E00C2AA99 /* AlertDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDisplayer.swift; sourceTree = "<group>"; };
+		4BC23E3A21D539DF00C2AA99 /* AlertDisplayerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDisplayerMock.swift; sourceTree = "<group>"; };
 		4BF63EDB21D3D2A9009D6743 /* DetailView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
 		8C4FCC6867511D30568D68EB /* Pods_HomeAwayChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeAwayChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AE83D08F903FFE2F0A3125 /* Pods-HomeAwayChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeAwayChallenge.debug.xcconfig"; path = "Target Support Files/Pods-HomeAwayChallenge/Pods-HomeAwayChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 			children = (
 				4B9986DF21C2F3D1008DA4DA /* APIMock.swift */,
 				4B9986E121C2F52C008DA4DA /* FavoriterMock.swift */,
+				4BC23E3A21D539DF00C2AA99 /* AlertDisplayerMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 		4BA977A221C0060B002DF5D2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4BC23E3821D5365E00C2AA99 /* AlertDisplayer.swift */,
 				4BA977A321C00634002DF5D2 /* API.swift */,
 				4BA977A921C0084C002DF5D2 /* Favoriter */,
 				4B9986E421C3180C008DA4DA /* Vibrator.swift */,
@@ -525,7 +531,9 @@
 			files = (
 				4BA977AD21C0088D002DF5D2 /* Favoriter.swift in Sources */,
 				4B9148E621C1BEB900337FB4 /* Constants.swift in Sources */,
+				4BC23E3B21D539DF00C2AA99 /* AlertDisplayerMock.swift in Sources */,
 				4BA977BC21C0774F002DF5D2 /* Event.swift in Sources */,
+				4BC23E3921D5365E00C2AA99 /* AlertDisplayer.swift in Sources */,
 				4BA9779E21C00532002DF5D2 /* DetailViewController.swift in Sources */,
 				4B9986DB21C2E9B0008DA4DA /* FavoriterEvents.swift in Sources */,
 				4BA977BA21C01B24002DF5D2 /* UISearchBar+TextViewExtensions.swift in Sources */,

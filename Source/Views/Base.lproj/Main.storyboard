@@ -51,30 +51,32 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spR-j9-mUR">
                                 <rect key="frame" x="0.0" y="79" width="375" height="588"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search the SeatGeek API" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avd-wj-NoQ">
-                                        <rect key="frame" x="15" y="249" width="345" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="26" id="eZx-aL-IEa"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="WUb-DB-odt">
-                                        <rect key="frame" x="103.5" y="70" width="168" height="158"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="168" id="QtV-uG-wwt"/>
-                                            <constraint firstAttribute="height" constant="158" id="wdN-Ha-vdb"/>
-                                        </constraints>
-                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="303-6Z-MbM">
+                                        <rect key="frame" x="73.5" y="70" width="228" height="205"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="WUb-DB-odt">
+                                                <rect key="frame" x="30" y="0.0" width="168" height="158"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="168" id="QtV-uG-wwt"/>
+                                                    <constraint firstAttribute="height" constant="158" id="wdN-Ha-vdb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search the SeatGeek API" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avd-wj-NoQ">
+                                                <rect key="frame" x="0.0" y="179" width="228" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="eZx-aL-IEa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.17016458725751327" green="0.47914254851936822" blue="0.69337084446751263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="avd-wj-NoQ" firstAttribute="centerX" secondItem="spR-j9-mUR" secondAttribute="centerX" id="GnS-dA-FAn"/>
-                                    <constraint firstItem="avd-wj-NoQ" firstAttribute="top" secondItem="WUb-DB-odt" secondAttribute="bottom" constant="21" id="SPg-Uv-eQP"/>
-                                    <constraint firstItem="avd-wj-NoQ" firstAttribute="centerX" secondItem="WUb-DB-odt" secondAttribute="centerX" id="cNo-0X-Iov"/>
-                                    <constraint firstItem="avd-wj-NoQ" firstAttribute="leading" secondItem="spR-j9-mUR" secondAttribute="leading" constant="15" id="cho-VK-OqZ"/>
-                                    <constraint firstItem="WUb-DB-odt" firstAttribute="top" secondItem="spR-j9-mUR" secondAttribute="top" constant="70" id="xv6-ec-Vn8"/>
+                                    <constraint firstItem="303-6Z-MbM" firstAttribute="top" secondItem="spR-j9-mUR" secondAttribute="top" constant="70" id="lmc-Ku-gs0"/>
+                                    <constraint firstItem="303-6Z-MbM" firstAttribute="centerX" secondItem="spR-j9-mUR" secondAttribute="centerX" id="zJf-MF-Ye7"/>
                                 </constraints>
                             </view>
                         </subviews>
