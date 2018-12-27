@@ -254,19 +254,11 @@
 		4BA977A221C0060B002DF5D2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				4BA977A721C00830002DF5D2 /* API */,
+				4BA977A321C00634002DF5D2 /* API.swift */,
 				4BA977A921C0084C002DF5D2 /* Favoriter */,
 				4B9986E421C3180C008DA4DA /* Vibrator.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		4BA977A721C00830002DF5D2 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				4BA977A321C00634002DF5D2 /* API.swift */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		4BA977A921C0084C002DF5D2 /* Favoriter */ = {

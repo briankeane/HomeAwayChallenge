@@ -16,18 +16,40 @@ Dependencies are managed with CocoaPods.  The Pods folder is checked into the re
 
 ## Overview
 
+#### Design Patterns Used
+
+* `MVC`
+* For overall structure on such a simple app I stuck with `MVC`.  Had there been a lot of files like `Event+DateTimeDisplayText` I would have considered using `MVVC` instead.
+
+* `Observer`
+* since multiple viewControllers on the stack had to respond to a 'Favorite/Unfavorite'
+
+* `Observer/Singleton`
+* A Singleton `Vibrator` service made sense, so that it could watch for Favorite events and respond to them regardless of their origin.
+
+* `Dependency Injection`
+* I used dependency injection to make isolated unit testing easy with mocks.  The `DisplayAlert`module would make it easy to change the appearance/behavior of all alerts across the app later.
+
+#### Models
+1. `Event.swift`
+
+#### Views
+1. `Main.stoyboard`
+2. `DetailView.storyboard` -- I separated the DetailView for easy editing
+
+#### Controllers
+1. The `ViewControllers` folders contain all files that relate to a single viewController.
+2. The `Extensions` contains extensions on UI components that relate entirely to their appearance.
+
 #### Utilities
-1. `API.swift` -- handles all networking 
+1. `API.swift` -- handles all networking.  On a larger app I would use priority Dispatch Queues, separate parsing into a separate service, and provide a more detailed error handling service.
 2. `Favoriter.swift` -- handles favoriting
-3.	`Vibrator.swift` -- haptic feedback
+3.  `Vibrator.swift` -- haptic feedback
  
-#### Config
+#### Resources
 1. `Constants.swift` -- I like to store string identifiers here to avoid spelling mistakes.
 2. `Keys.swift` -- stores everything I do not want in my repository.
 
-#### UI
-1. The `ViewControllers` folders contain all files that relate to a single viewController.
-2. The `UI-Related-Extensions` contains extensions on UI components as well as other extensions that relate only to the UI (in this case, the computed `eventDateTimeDisplayText` property, since it's functionality relates only to the display).
 
 
 ## Testing
@@ -37,6 +59,7 @@ Dependencies are managed with CocoaPods.  The Pods folder is checked into the re
 * **Mocks:** -- located in `Tests/Mocks`
 * **Sample Responses** -- network communication is tested against the actual API responses in `Tests/SampleResponses`
 
+## Architecture
 
 ## Thanks
 
