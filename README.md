@@ -22,7 +22,8 @@
 #### Utilities
 1. `API.swift` -- handles all networking.  On a larger app I would use priority Dispatch Queues, separate parsing into a separate service, and provide a more detailed error handling service.
 2. `Favoriter.swift` -- handles favoriting
-3.  `Vibrator.swift` -- haptic feedback
+3. `Vibrator.swift` -- haptic feedback
+4. `AlertDisplayer.swift` -- App-wide alert message handler for uniformity.
  
 #### Resources
 1. `Constants.swift` -- I like to store string identifiers here to avoid spelling mistakes.
