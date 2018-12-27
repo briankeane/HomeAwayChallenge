@@ -6,29 +6,7 @@
 1. Copy the contents of `Source/Config/Keys-Example.swift` to a new file called `Keys.swift` in the same folder.  
 2. Fill in the secret keys with your own seatGeek api info.
 
-## Dependencies:
-Dependencies are managed with CocoaPods.  The Pods folder is checked into the repo so no `pod install` is necessary
-
-1. [Alamofire](https://github.com/Alamofire/Alamofire) -- I know it's just one request, but I figure if this was real, we'd be adding to it.
-2. [Quick](https://github.com/Quick/Quick) and [Nimble](https://github.com/Quick/Nimble) -- I'm fluent in XCTest but I looove the way the Quick and Nimble make the tests so readable.
-3. [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) -- because parsing JSON is one of the few things I don't like to do in Swift.
-4. [Kingfisher](https://github.com/onevcat/Kingfisher) -- saved me a lot of imageView code in the searchResultsTableView
-
 ## Overview
-
-#### Design Patterns Used
-
-* `MVC`
-* For overall structure on such a simple app I stuck with `MVC`.  Had there been a lot of files like `Event+DateTimeDisplayText` I would have considered using `MVVC` instead.
-
-* `Observer`
-* since multiple viewControllers on the stack had to respond to a 'Favorite/Unfavorite'
-
-* `Observer/Singleton`
-* A Singleton `Vibrator` service made sense, so that it could watch for Favorite events and respond to them regardless of their origin.
-
-* `Dependency Injection`
-* I used dependency injection to make isolated unit testing easy with mocks.  The `DisplayAlert`module would make it easy to change the appearance/behavior of all alerts across the app later.
 
 #### Models
 1. `Event.swift`
@@ -51,6 +29,20 @@ Dependencies are managed with CocoaPods.  The Pods folder is checked into the re
 2. `Keys.swift` -- stores everything I do not want in my repository.
 
 
+#### Design Patterns Used
+
+* `MVC`
+	* Simple structure for a simple app
+
+* `Observer`
+	* since multiple viewControllers had to respond to a 'Favorite/Unfavorite' event
+
+* `Observer/Singleton`
+	* A Singleton `Vibrator` service made sense, so that it could watch for Favorite events and respond to them regardless of their origin.
+
+* `Dependency Injection`
+	* I used dependency injection to make isolated unit testing easy with mocks.  The `DisplayAlert`module would make it easy to change the appearance/behavior of all alerts across the app later.
+
 
 ## Testing
 
@@ -59,7 +51,13 @@ Dependencies are managed with CocoaPods.  The Pods folder is checked into the re
 * **Mocks:** -- located in `Tests/Mocks`
 * **Sample Responses** -- network communication is tested against the actual API responses in `Tests/SampleResponses`
 
-## Architecture
+## Dependencies:
+Dependencies are managed with CocoaPods.  The Pods folder is checked into the repo so no `pod install` is necessary
+
+1. [Alamofire](https://github.com/Alamofire/Alamofire) -- I know it's just one request, but I figure if this was real, we'd be adding to it.
+2. [Quick](https://github.com/Quick/Quick) and [Nimble](https://github.com/Quick/Nimble) -- I'm fluent in XCTest but I looove the way the Quick and Nimble make the tests so readable.
+3. [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) -- because parsing JSON is one of the few things I don't like to do in Swift.
+4. [Kingfisher](https://github.com/onevcat/Kingfisher) -- saved me a lot of imageView code in the searchResultsTableView
 
 ## Thanks
 

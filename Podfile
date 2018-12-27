@@ -16,5 +16,4 @@ target 'HomeAwayChallenge' do
     pod 'OHHTTPStubs'
     pod 'OHHTTPStubs/Swift'
   end
-
 end
