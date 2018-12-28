@@ -13,14 +13,14 @@
 
 #### Views
 1. `Main.stoyboard`
-2. `DetailView.storyboard` -- I separated the DetailView for easy editing
+2. `DetailView.storyboard`
 
 #### Controllers
 1. The `ViewControllers` folders contain all files that relate to a single viewController.
 2. The `Extensions` contains extensions on UI components that relate entirely to their appearance.
 
 #### Utilities
-1. `API.swift` -- handles all networking.  On a larger app I would use priority Dispatch Queues, separate parsing into a separate service, and provide a more detailed error handling service.
+1. `API.swift` -- handles all networking.  On a larger app I would use priority Dispatch Queues, separate parsing into separate handlers, and provide a more detailed error handling service.
 2. `Favoriter.swift` -- handles favoriting
 3. `Vibrator.swift` -- haptic feedback
 4. `AlertDisplayer.swift` -- App-wide alert message handler for uniformity.
@@ -30,19 +30,19 @@
 2. `Keys.swift` -- stores everything I do not want in my repository.
 
 
-#### Design Patterns Used
+## Design Patterns Used
 
 * `MVC`
 	* Simple structure for a simple app
 
-* `Observer`
+* `Observer Pattern`
 	* since multiple viewControllers had to respond to a 'Favorite/Unfavorite' event
 
-* `Observer/Singleton`
+* `Singleton Pattern`
 	* A Singleton `Vibrator` service made sense, so that it could watch for Favorite events and respond to them regardless of their origin.
 
 * `Dependency Injection`
-	* I used dependency injection to make isolated unit testing easy with mocks.  The `DisplayAlert`module would make it easy to change the appearance/behavior of all alerts across the app later.
+	* I used dependency injection to make isolated unit testing easy with mocks.
 
 
 ## Testing
